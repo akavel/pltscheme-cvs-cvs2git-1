@@ -211,11 +211,32 @@
 	      (make-object mred:hyper-frame:hyper-view-frame% url)))))
     
     ; Query the user for a file and then edit it
+
+    (define *open-directory* ; object to remember last directory
+      (make-object 
+       (class null ()
+	      (private 
+	       [the-dir #f])
+	      (public
+	       [get (lambda () the-dir)]
+	       [set-from-file!
+		(lambda (file) 
+		  (set! the-dir (mzlib:file:path-only file)))]
+	       [set-to-default
+		(lambda ()
+		  (set! the-dir (current-directory)))])
+	      (sequence
+		(set-to-default)))))
+
     (define open-file
       (lambda ()
 	(let ([file 
 	       (parameterize ([mred:finder:dialog-parent-parameter
 			       (mred:test:test:get-active-frame)])
-		 (mred:finder:get-file))])
+		 (mred:finder:get-file
+		  (send *open-directory* get)))])
+	  (when file
+		(send *open-directory*
+		      set-from-file! file))
 	  (and file
 	       (edit-file file))))))
