@@ -2,13 +2,15 @@
 ;;
 ;; parser-tests.ss
 ;; Richard Cobbe
-;; $Id: parser-tests.ss,v 1.8 2005/02/02 15:06:47 cobbe Exp $
+;; $Id: parser-tests.ss,v 1.9 2005/02/18 03:53:41 cobbe Exp $
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (module parser-tests mzscheme
 
   (require (lib "etc.ss")
+           (planet "test.ss" ("schematics" "schemeunit.plt" 1))
+           (planet "util.ss" ("schematics" "schemeunit.plt" 1))
            "test.ss"
            "ast.ss")
   (require/expose "parser.ss" (make-temp-class

@@ -2,7 +2,7 @@
 ;;
 ;; test.ss
 ;; Richard Cobbe
-;; $Id: test.ss,v 1.1 2005/02/02 15:06:48 cobbe Exp $
+;; $Id: test.ss,v 1.2 2005/02/18 03:53:41 cobbe Exp $
 ;;
 ;; Contains SchemeUnit assertions and other things of convenience for
 ;; testing.
@@ -11,11 +11,9 @@
 
 (module test mzscheme
 
-  (require (lib "util.ss" "schemeunit")
-           (lib "test.ss" "schemeunit"))
-
-  (print-struct #t)
-
+  (require (planet "test.ss" ("schematics" "schemeunit.plt" 1)))
+  ;; need test.ss for assert-true.
+  
   ;; An assertion for expressions that handle multiple values.
   ;;    same? : predicate for comparing expected with actual results
   ;;    expr  : expression to test
@@ -33,6 +31,4 @@
       (hash-table-map ht list)))
 
   (provide mv-assert
-           hash-table->sexpr
-           require/expose
-           (all-from (lib "test.ss" "schemeunit"))))
+           hash-table->sexpr))

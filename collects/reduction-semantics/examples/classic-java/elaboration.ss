@@ -3,7 +3,7 @@
 ;; elaboration.ss
 ;;
 ;; Richard Cobbe
-;; $Id: elaboration.ss,v 1.4 2005/02/02 15:06:47 cobbe Exp $
+;; $Id: elaboration.ss,v 1.5 2005/02/18 03:53:41 cobbe Exp $
 ;;
 ;; Code to type-check and elaborate the program.
 ;;
@@ -14,9 +14,9 @@
   (require (lib "contract.ss")
            (lib "match.ss")
            (lib "helper.ss" "reduction-semantics")
+           (planet "environment.ss" ("cobbe" "environment.plt" 1))
 
            "utils.ss"
-           "environment.ss"
            "program.ss"
            "ast.ss")
 

@@ -2,13 +2,14 @@
 ;;
 ;; program-tests.ss
 ;; Richard Cobbe
-;; $Id: program-tests.ss,v 1.7 2005/02/02 15:06:47 cobbe Exp $
+;; $Id: program-tests.ss,v 1.8 2005/02/18 03:53:41 cobbe Exp $
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (module program-tests mzscheme
 
-  (require "test.ss"
+  (require (planet "test.ss" ("schematics" "schemeunit.plt" 1))
+           (planet "util.ss" ("schematics" "schemeunit.plt" 1))
            "parser.ss"
            "ast.ss")
   (provide program-tests)
