@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: Net.cc,v 1.5 2001/06/05 00:21:26 mflatt Exp $
  *
  * Purpose: host and user net info
  *
