@@ -1,4 +1,4 @@
-; $Id: scm-core.ss,v 1.58 2000/04/30 22:31:01 clements Exp $
+; $Id: scm-core.ss,v 1.59 2000/04/30 22:37:34 clements Exp $
 
 (unit/sig zodiac:scheme-core^
   (import zodiac:structures^ zodiac:misc^ zodiac:sexp^
@@ -206,8 +206,10 @@
     (lambda (expr env attributes vocab)
       (let ((r (ensure-not-macro/micro expr env vocab attributes)))
 	(cond
-	  ((lexical-binding? r)
-	    (create-lexical-varref r expr))
+	  ((lambda-binding? r)
+           (create-lambda-varref r expr))
+          ((lexical-binding? r)
+           (create-lexical-varref r expr))
 	  ((top-level-resolution? r)
 	   (check-for-signature-name expr attributes)
 	   (process-top-level-resolution expr attributes))
