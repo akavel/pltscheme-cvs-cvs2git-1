@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: PSDC.cc,v 1.8 1998/09/06 01:53:59 mflatt Exp $
+ * RCS_ID:      $Id: PSDC.cc,v 1.9 1998/09/09 16:02:47 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -225,7 +225,7 @@ class PSStream : public wxObject {
     int_width = 0;
   }
   ~PSStream(void) {
-    fclose(f);
+    if (f) fclose(f);
   }
 
   int good(void) {

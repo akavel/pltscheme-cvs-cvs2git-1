@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: WindowDC.cc,v 1.4 1998/08/05 23:56:31 mflatt Exp $
+ * $Id: WindowDC.cc,v 1.5 1998/09/09 16:02:49 mflatt Exp $
  *
  * Purpose: device context to draw drawables
  *          (windows and pixmaps, even if pixmaps are covered by wxMemoryDC)
@@ -867,6 +867,9 @@ void wxWindowDC::SetPen(wxPen *pen)
 
 void wxWindowDC::TryColour(wxColour *src, wxColour *dest)
 {
+  if (!DRAWABLE)
+    return;
+
   XColor xcol;
 
   xcol.pixel = src->GetPixel(current_cmap, IS_COLOR, 1);
