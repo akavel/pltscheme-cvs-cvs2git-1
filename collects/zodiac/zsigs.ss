@@ -1,5 +1,5 @@
 ;;
-;; $Id: zsigs.ss,v 1.5 1997/09/05 17:29:43 shriram Exp $
+;; $Id: zsigs.ss,v 1.6 1997/12/03 19:20:21 robby Exp $
 ;;
 ;; The signatures for all scanner/reader units.
 ;;
@@ -75,7 +75,8 @@
 ;;
 
 (define-signature  zodiac:scanner-parameters^
-  (scan:paren-relation
+  (read-exact-numbers
+   scan:paren-relation
    scan:self-delim-symbols
    scan:newline-list
    scan:tab-list
