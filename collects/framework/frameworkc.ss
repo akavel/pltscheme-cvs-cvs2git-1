@@ -1,5 +1,5 @@
 ;;
-;; $Id: frameworkc.ss,v 1.12 1999/07/12 04:43:13 robby Exp $
+;; $Id: frameworkc.ss,v 1.13 1999/07/16 05:11:06 robby Exp $
 ;;
 
 (compound-unit/sig (import [core:string : mzlib:string^]
@@ -7,7 +7,7 @@
 			   [core:pretty-print : mzlib:pretty-print^]
 			   [core:file : mzlib:file^]
 			   [core:thread : mzlib:thread^]
-			   [mred : mred-interfaces^]
+			   [mred : mred^]
 			   [keys : framework:keys^]
 			   [test : framework:test^])
   (link [application : framework:application^ ((require-relative-library "app.ss"))]
