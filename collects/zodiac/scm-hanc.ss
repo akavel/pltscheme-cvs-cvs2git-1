@@ -1,4 +1,4 @@
-; $Id: scm-hanc.ss,v 1.49 1998/05/15 07:33:24 shriram Exp $
+; $Id: scm-hanc.ss,v 1.50 1998/05/15 21:34:03 shriram Exp $
 
 (define-struct signature-element (source))
 (define-struct (name-element struct:signature-element) (name))
@@ -707,7 +707,8 @@
 					 (path->complete-path base
 					   (or original-directory 
 					     (current-directory))))
-				       original-directory)])
+				       (or original-directory
+					 (current-directory)))])
 		      (dynamic-wind
 			void
 			(lambda ()
