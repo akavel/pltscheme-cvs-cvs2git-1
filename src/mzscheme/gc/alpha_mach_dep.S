@@ -1,4 +1,4 @@
- # $Id: alpha_mach_dep.s,v 1.5 2001/07/09 02:04:21 mflatt Exp $
+ # $Id: alpha_mach_dep.S,v 1.1 2004/07/21 13:07:52 mflatt Exp $
 	.arch ev6
 
         .text
