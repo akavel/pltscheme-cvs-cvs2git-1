@@ -1,7 +1,7 @@
 ; File Formats and Modes
 
   (unit/sig mred:handler^
-    (import mred:wx^
+    (import [wx : wx^]
 	    [mred:constants : mred:constants^]
 	    [mred:gui-utils : mred:gui-utils^]
 	    [mred:editor-frame : mred:editor-frame^]

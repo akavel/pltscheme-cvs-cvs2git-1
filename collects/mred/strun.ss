@@ -1,5 +1,5 @@
 ;;
-;; $Id: strun.ss,v 1.9 1997/12/04 21:24:35 mflatt Exp $
+;; $Id: strun.ss,v 1.10 1997/12/08 18:41:42 robby Exp $
 ;;
 ;; Run one fake action in the real handler thread.
 ;; This should be the only file that needs to worry about multiple
@@ -22,7 +22,7 @@
 
 (unit/sig mred:test:run^
   
-  (import mred:wx^)
+  (import [wx : wx^])
   
   (define initial-run-interval 100)  ;; milliseconds
   

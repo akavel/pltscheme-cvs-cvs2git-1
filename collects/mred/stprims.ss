@@ -1,5 +1,5 @@
 ;;
-;; $Id: stprims.ss,v 1.15 1997/12/04 21:24:58 mflatt Exp $
+;; $Id: stprims.ss,v 1.16 1997/12/08 18:41:42 robby Exp $
 ;;
 ;; Primitives for faking user input.
 ;; Buttons, Keystrokes, Menus, Mice.
@@ -7,11 +7,10 @@
 
 (unit/sig mred:test:primitives^
   
-  (import 
-    mred:wx^
-    [mred      : mred:testable-window^]
-    [mred      : mred:keymap^]
-    [mred:test : mred:test:run^])
+  (import [wx : wx^]
+	  [mred      : mred:testable-window^]
+	  [mred      : mred:keymap^]
+	  [mred:test : mred:test:run^])
 
   (define arg-error error)  ;; naive error handling (for now).
   (define run-error error)

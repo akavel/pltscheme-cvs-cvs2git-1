@@ -1,5 +1,5 @@
 ;;
-;; $Id: contkids.ss,v 1.46 1997/12/01 18:31:19 robby Exp $
+;; $Id: contkids.ss,v 1.47 1997/12/08 18:41:42 robby Exp $
 ;;
 
 ; need to export:
@@ -26,7 +26,7 @@
 ; text-window%
 
     (unit/sig mred:container-children^
-      (import mred:wx^
+      (import [wx : wx^]
 	      [mred:constants : mred:constants^]
               [mred : mred:testable-window^]
 	      [mred:connections : mred:connections^]
