@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:     August 1994
- * RCS_ID:      $Id: wb_gdi.cc,v 1.12 1999/07/26 15:13:41 mflatt Exp $
+ * RCS_ID:      $Id: wb_gdi.cc,v 1.13 1999/09/03 18:19:52 clements Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -970,7 +970,7 @@ wxIntPoint::~wxIntPoint (void)
 }
 #endif
 
-static far char *font_defaults[] = {
+static WX_FAR char *font_defaults[] = {
   /* MATTHEW: [4] Family map */
   "FamilyDefault", "Default",
   "FamilyRoman", "Roman",
