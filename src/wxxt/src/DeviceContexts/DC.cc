@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: DC.cc,v 1.2 1998/07/03 21:17:31 mflatt Exp $
+ * $Id: DC.cc,v 1.3 1998/08/01 12:42:15 mflatt Exp $
  *
  * Purpose: basic device context
  *
@@ -136,6 +136,8 @@ void wxDC::SetUserScale(float xs, float ys)
     user_scale_x = xs;
     user_scale_y = ys;
     ComputeScaleAndOrigin();
+    SetFont(current_font);
+    SetPen(current_pen);
 }
 
 //-----------------------------------------------------------------------------
