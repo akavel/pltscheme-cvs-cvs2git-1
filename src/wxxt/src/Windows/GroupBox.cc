@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: GroupBox.cc,v 1.1 1997/12/22 17:29:00 mflatt Exp $
+ * $Id: GroupBox.cc,v 1.1.1.1 1997/12/22 17:29:00 mflatt Exp $
  *
  * Purpose: group box choice panel item
  *

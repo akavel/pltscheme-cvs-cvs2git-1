@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: DC.cc,v 1.1 1997/12/22 17:28:48 mflatt Exp $
+ * $Id: DC.cc,v 1.1.1.1 1997/12/22 17:28:48 mflatt Exp $
  *
  * Purpose: basic device context
  *

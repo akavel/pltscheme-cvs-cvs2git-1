@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: ListBox.h,v 1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: ListBox.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
  *
  * Purpose: list box panel item
  *

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Layout.h,v 1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: Layout.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
  *
  * Purpose: layout classes
  *

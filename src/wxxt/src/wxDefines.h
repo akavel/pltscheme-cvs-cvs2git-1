@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: wxDefines.h,v 1.1 1997/12/22 17:28:42 mflatt Exp $
+ * $Id: wxDefines.h,v 1.1.1.1 1997/12/22 17:28:42 mflatt Exp $
  *
  * Purpose: Declarations/definitions common to all wx source files
  *

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: TextWindow.h,v 1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: TextWindow.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
  *
  * Purpose: text window panel item
  *

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Assert.cc,v 1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: Assert.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
  *
  * Purpose: assert utility
  *

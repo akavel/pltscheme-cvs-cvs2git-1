@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Gauge.h,v 1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: Gauge.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
  *
  * Purpose: gauge panel item
  *

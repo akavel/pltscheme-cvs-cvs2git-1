@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Resources.cc,v 1.1 1997/12/22 17:28:55 mflatt Exp $
+ * $Id: Resources.cc,v 1.1.1.1 1997/12/22 17:28:55 mflatt Exp $
  *
  * Purpose: read/write .Xdefaults
  *

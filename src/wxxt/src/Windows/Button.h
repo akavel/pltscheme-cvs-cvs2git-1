@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Button.h,v 1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: Button.h,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
  *
  * Purpose: button panel item
  *

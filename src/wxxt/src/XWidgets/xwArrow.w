@@ -3,7 +3,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 1.2
 #
-# $Id: xwArrow.w,v 1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwArrow.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
 
 @CLASS XfwfArrow (XfwfBoard)  @file = xwArrow
 

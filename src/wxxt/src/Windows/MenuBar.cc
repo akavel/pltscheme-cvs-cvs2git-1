@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: MenuBar.cc,v 1.1 1997/12/22 17:28:58 mflatt Exp $
+ * $Id: MenuBar.cc,v 1.1.1.1 1997/12/22 17:28:58 mflatt Exp $
  *
  * Purpose: menu bar class
  *

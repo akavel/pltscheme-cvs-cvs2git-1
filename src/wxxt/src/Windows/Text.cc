@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Text.cc,v 1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: Text.cc,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
  *
  * Purpose: text panel item
  *

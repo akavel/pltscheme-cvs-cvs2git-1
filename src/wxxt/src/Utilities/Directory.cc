@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Directory.cc,v 1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: Directory.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
  *
  * Purpose: basic file and directory handling
  *

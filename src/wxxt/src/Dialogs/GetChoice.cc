@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: GetChoice.cc,v 1.1 1997/12/22 17:28:49 mflatt Exp $
+ * $Id: GetChoice.cc,v 1.1.1.1 1997/12/22 17:28:49 mflatt Exp $
  *
  * Purpose: dialogs to select or more selection from listboxes
  *

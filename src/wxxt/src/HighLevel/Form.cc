@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Form.cc,v 1.1 1997/12/22 17:28:51 mflatt Exp $
+ * $Id: Form.cc,v 1.1.1.1 1997/12/22 17:28:51 mflatt Exp $
  *
  * Purpose: formatted dialog generation
  *

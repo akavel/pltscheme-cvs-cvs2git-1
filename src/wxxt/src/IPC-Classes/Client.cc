@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Client.cc,v 1.1 1997/12/22 17:28:54 mflatt Exp $
+ * $Id: Client.cc,v 1.1.1.1 1997/12/22 17:28:54 mflatt Exp $
  *
  * Purpose: client part of an IPC connection
  *

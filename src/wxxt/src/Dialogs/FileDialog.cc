@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: FileDialog.cc,v 1.1 1997/12/22 17:28:49 mflatt Exp $
+ * $Id: FileDialog.cc,v 1.1.1.1 1997/12/22 17:28:49 mflatt Exp $
  *
  * Purpose: file load and save dialogs
  *

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Font.h,v 1.1 1997/12/22 17:28:50 mflatt Exp $
+ * $Id: Font.h,v 1.1.1.1 1997/12/22 17:28:50 mflatt Exp $
  *
  * Purpose: wxWindows font handling
  *

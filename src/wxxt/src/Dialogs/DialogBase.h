@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: DialogBase.h,v 1.1 1997/12/22 17:28:49 mflatt Exp $
+ * $Id: DialogBase.h,v 1.1.1.1 1997/12/22 17:28:49 mflatt Exp $
  *
  * Purpose: dialog function box (used for common dialogs)
  *
