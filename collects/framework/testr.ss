@@ -1,5 +1,5 @@
 ;;
-;; $Id: testr.ss,v 1.14 1999/02/11 17:19:12 robby Exp $
+;; $Id: testr.ss,v 1.15 1999/02/11 17:23:45 robby Exp $
 ;;
 ;; (mred:test:run-interval [msec]) is parameterization for the
 ;; interval (in milliseconds) between starting actions.
@@ -683,6 +683,6 @@
 		(void))))]))))
   
   (define (close-frame frame)
-    (when (send-frame can-close?)
+    (when (send frame can-close?)
       (send frame on-close)
       (send frame show #f))))
