@@ -1,9 +1,7 @@
 /* -----------------------------------------------------------------------
    sysv.h - Copyright (c) 1998 Geoffrey Keating
-   
-   PowerPC Assembly glue.
 
-   $Id: sysv.S,v 1.1 2004/05/26 23:06:17 eli Exp $
+   PowerPC Assembly glue.
 
    Permission is hereby granted, free of charge, to any person obtaining
    a copy of this software and associated documentation files (the
@@ -25,7 +23,7 @@
    OTHER DEALINGS IN THE SOFTWARE.
    ----------------------------------------------------------------------- */
 
-#define LIBFFI_ASM	
+#define LIBFFI_ASM
 #include <fficonfig.h>
 #include <ffi.h>
 #include <powerpc/asm.h>

@@ -3,7 +3,7 @@
    
    Alpha/OSF Foreign Function Interface 
 
-   $Id: osf.S,v 1.1 2004/05/26 23:04:37 eli Exp $
+   $Id: osf.S,v 1.2 2004/10/25 07:21:13 eli Exp $
 
    Permission is hereby granted, free of charge, to any person obtaining
    a copy of this software and associated documentation files (the
