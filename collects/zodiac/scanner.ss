@@ -1,6 +1,6 @@
 ;;
 ;;  zodiac:scanner-code@
-;;  $Id: scanner.ss,v 1.15 2000/05/28 03:47:31 shriram Exp $
+;;  $Id: scanner.ss,v 1.16 2000/07/02 17:36:08 shriram Exp $
 ;;
 ;;  Zodiac Scanner  July 96.
 ;;  mwk, plt group, Rice university.
@@ -554,7 +554,7 @@
 		     (let ([c  char])
 		       (get-char)
 		       (z:error "invalid # syntax"))])))]
-	     
+
 	     [scan-hash-stick
 	      (lambda ()
 		(let  loop  ([nest  1])
