@@ -4,7 +4,7 @@
 ;; Richard Cobbe
 ;; July 2004
 ;;
-;; $Id: utils.ss,v 1.1 2004/07/27 22:41:35 cobbe Exp $
+;; $Id: utils.ss,v 1.2 2004/08/03 17:00:10 cobbe Exp $
 ;;
 ;; General utilities used in the implementation of ClassicJava.
 ;;
@@ -33,7 +33,7 @@
                (define old-inspector (current-inspector))
                (current-inspector (make-inspector))
                defns ...
-               (current-inspector old-inspector)))])))
+               (current-inspector (#%top . old-inspector))))])))
 
   (provide with-public-inspector)
 
