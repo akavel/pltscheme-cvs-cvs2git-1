@@ -3,7 +3,7 @@
 # Contains the source for the Frame widget
 # Version 2.2.1 for FWF V4.0
 #
-# $Id: xwFrame.w,v 1.1.1.1 1997/12/22 17:29:04 mflatt Exp $
+# $Id: xwFrame.w,v 1.2 1997/12/27 20:24:40 mflatt Exp $
 
 @class XfwfFrame (XfwfCommon) @file=xwFrame
 
@@ -252,9 +252,9 @@ have to use it as a stipple.
     attributes->cursor = $cursor;
     #realize($, mask, attributes);
 
-    $gray = NULL;
-    $lightGray = NULL;
-    $darkGray = NULL;
+    $gray = (Pixmap)NULL;
+    $lightGray = (Pixmap)NULL;
+    $darkGray = (Pixmap)NULL;
 
     create_lightgc($);
     create_darkgc($);

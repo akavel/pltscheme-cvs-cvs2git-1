@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 1.2 for FWF V4.0
 #
-# $Id: xwCommon.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwCommon.w,v 1.2 1997/12/27 20:24:39 mflatt Exp $
 
 @class XfwfCommon (Composite)  @file=xwCommon
 
@@ -530,7 +530,7 @@ keyboard events. If so, it sets the focus to itself and returns
 
 @proc hilite_callbacks($)
 {
-  XtPointer on = (XtPointer)$traversal_focus;
+  XtPointer on = (XtPointer)(long)$traversal_focus;
 
   while ($ && XtIsSubclass($, xfwfCommonWidgetClass) && !$focusHiliteChange)
     $ = XtParent($);
