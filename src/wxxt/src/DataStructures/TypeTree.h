@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: TypeTree.h,v 1.3 1999/11/30 22:20:07 mflatt Exp $
  *
  * Purpose: type tree (type keys defined in common.h)
  *
