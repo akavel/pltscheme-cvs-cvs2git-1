@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Colour.h,v 1.6 1999/11/28 05:21:34 mflatt Exp $
+ * $Id: Colour.h,v 1.7 1999/11/30 22:20:07 mflatt Exp $
  *
  * Purpose: classes to cover colours and colourmaps
  *
@@ -101,7 +101,7 @@ private:
 
 class wxColourDatabase : public wxList { // colour database representation
 public:
-    wxColourDatabase(void) : wxList(wxKEY_STRING) {};
+    wxColourDatabase(void);
     ~wxColourDatabase(void);
 
     wxColour *FindColour(const char *colour);

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: TypeTree.cc,v 1.5 1999/11/24 21:20:19 mflatt Exp $
+ * $Id: TypeTree.cc,v 1.6 1999/11/30 22:20:07 mflatt Exp $
  *
  * Purpose: type tree
  *
@@ -29,6 +29,13 @@
 
 #define  Uses_wxTypeTree
 #include "wx.h"
+
+wxTypeDef::wxTypeDef()
+: wxObject(FALSE) 
+{ 
+  name = NULL; 
+  __type = wxTYPE_TYPEDEF;
+}
 
 typedef struct {
     WXTYPE my_type;
