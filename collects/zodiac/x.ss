@@ -1,4 +1,4 @@
-; $Id: x.ss,v 1.49 1999/05/20 22:36:53 mflatt Exp $
+; $Id: x.ss,v 1.50 1999/05/21 12:53:31 mflatt Exp $
 
 (unit/sig zodiac:expander^
   (import
@@ -275,7 +275,7 @@
 
   (define introduce-fresh-identifier
     (lambda (new-name source)
-      (z:make-symbol (make-origin 'micro 'never-mind)
+      (z:make-symbol (make-origin 'non-source 'never-mind)
 	(zodiac-start source) (zodiac-finish source)
 	new-name new-name '())))
   
