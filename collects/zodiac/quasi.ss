@@ -1,4 +1,4 @@
-; $Id: quasi.ss,v 1.6 1998/03/19 00:36:32 shriram Exp $
+; $Id: quasi.ss,v 1.7 1998/11/04 21:09:23 mflatt Exp $
 
 ; Fix the null? in qq-normalize.
 
@@ -16,7 +16,7 @@
       (structurize-syntax e source)
       env attributes vocab)))
 
-(add-primitivized-micro-form 'quasiquote scheme-vocabulary
+(add-primitivized-micro-form 'quasiquote common-vocabulary
   (let* ((kwd '())
 	  (in-pattern '(_ template))
 	  (m&e (pat:make-match&env in-pattern kwd))
