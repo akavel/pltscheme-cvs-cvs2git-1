@@ -1,5 +1,5 @@
 ;;
-;; $Id: linkwx.ss,v 1.1 1997/12/01 18:43:29 robby Exp $
+;; $Id: linkwx.ss,v 1.2 1997/12/04 21:27:36 mflatt Exp $
 ;;
 
 (compound-unit/sig (import [core : mzlib:core^]
@@ -63,7 +63,7 @@
 		   ((reference-unit/sig "guiutils.ss") wx 
 		    (minimal constants) frame (minimal container) canvas edit
 		    (core function@))]
-	[graph : mred:graph^ ((reference-unit/sig "graph.ss")
+	[graph : mred:graph^ ((reference-unit/sig "graph.ss") wx
 			      (minimal constants) edit gui-utils
 			      (core string@)
 			      (core function@))]
