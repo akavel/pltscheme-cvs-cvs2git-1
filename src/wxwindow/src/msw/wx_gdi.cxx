@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_gdi.cxx,v 1.15 1999/08/05 00:50:47 mflatt Exp $
+ * RCS_ID:      $Id: wx_gdi.cxx,v 1.16 1999/10/05 14:24:06 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -150,6 +150,7 @@ HFONT wxFont::BuildInternalFont(HDC dc, Bool screenFont)
     break;
   case wxTELETYPE:
   case wxMODERN:
+  case wxSYMBOL:
     ff_family = FF_MODERN;
     break;
   case wxSWISS: 
