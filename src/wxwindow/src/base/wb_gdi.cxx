@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:     August 1994
- * RCS_ID:      $Id: wb_gdi.cxx,v 1.6 1998/04/11 21:59:24 mflatt Exp $
+ * RCS_ID:      $Id: wb_gdi.cxx,v 1.7 1998/09/12 15:30:46 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -96,7 +96,20 @@ char *wxbFont::GetFamilyString(void)
 /* MATTHEW: [4] New font system */
 char *wxbFont::GetFaceString(void)
 {
-  return wxTheFontNameDirectory.GetFontName(fontid); 
+  /* If it's one of the portable faceless fonts, return NULL */
+  switch (GetFamily())
+  {
+  case wxDECORATIVE:
+  case wxROMAN:
+  case wxSCRIPT:
+  case wxSWISS:
+  case wxMODERN:
+  case wxTELETYPE:
+  case wxSYSTEM:
+    return NULL;
+  default:
+    return wxTheFontNameDirectory.GetFontName(fontid); 
+  }
 }
 
 char *wxbFont::GetStyleString(void)
