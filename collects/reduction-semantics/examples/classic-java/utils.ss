@@ -4,7 +4,7 @@
 ;; Richard Cobbe
 ;; July 2004
 ;;
-;; $Id: utils.ss,v 1.2 2004/08/03 17:00:10 cobbe Exp $
+;; $Id: utils.ss,v 1.3 2004/08/10 15:54:35 cobbe Exp $
 ;;
 ;; General utilities used in the implementation of ClassicJava.
 ;;
@@ -93,12 +93,6 @@
   ;; contract that recognizes unary predicates
   (define predicate? (any? . -> . boolean?))
 
-  (define-syntax eta
-    (syntax-rules ()
-      [(_ pred) (lambda (x) (pred x))]))
-
   (provide/contract (sexp? contract?)
                     (predicate? contract?)
-                    (nelistof (-> (union contract? predicate?) contract?)))
-
-  (provide eta))
+                    (nelistof (-> (union contract? predicate?) contract?))))
