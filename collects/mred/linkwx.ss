@@ -1,5 +1,5 @@
 ;;
-;; $Id: linkwx.ss,v 1.3 1997/12/08 18:41:42 robby Exp $
+;; $Id: linkwx.ss,v 1.4 1998/01/27 21:54:14 robby Exp $
 ;;
 
 (compound-unit/sig (import [core : mzlib:core^]

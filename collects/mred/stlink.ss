@@ -1,5 +1,5 @@
 ;;
-;; $Id: stlink.ss,v 1.12 1997/12/08 18:41:42 robby Exp $
+;; $Id: stlink.ss,v 1.13 1998/01/27 21:54:16 robby Exp $
 ;;
 ;; Link the gui tester together into compound unit.
 ;;

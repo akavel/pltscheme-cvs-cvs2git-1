@@ -1,5 +1,5 @@
 ;;
-;; $Id: containr.ss,v 1.34 1997/12/08 18:41:42 robby Exp $
+;; $Id: containr.ss,v 1.35 1998/01/27 21:54:11 robby Exp $
 ;;
 
 ; resizes too small really confuse things, since client sizes wrap (-2

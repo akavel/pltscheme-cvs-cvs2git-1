@@ -1,5 +1,5 @@
 ;;
-;; $Id: connect.ss,v 1.18 1997/12/08 18:41:42 robby Exp $
+;; $Id: connect.ss,v 1.19 1998/01/27 21:54:09 robby Exp $
 ;;
 
   (unit/sig mred:connections^
