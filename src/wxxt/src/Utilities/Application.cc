@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Application.cc,v 1.3 1999/11/04 17:25:36 mflatt Exp $
+ * $Id: Application.cc,v 1.4 1999/11/27 00:59:28 mflatt Exp $
  *
  * Purpose: global utilities for wxWindows application and main loop
  *
@@ -33,7 +33,9 @@
 
 void wxExit(void)
 {
-    exit(wxTheApp->OnExit());
+  int v;
+  v = wxTheApp->OnExit();
+  exit(v);
 }
 
 //-----------------------------------------------------------------------------

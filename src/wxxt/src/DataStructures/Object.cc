@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Object.cc,v 1.3 1999/11/19 16:28:10 mflatt Exp $
+ * $Id: Object.cc,v 1.4 1999/11/27 00:59:27 mflatt Exp $
  *
  * Purpose: Top level object and memory debugging for wxWindows
  *
@@ -49,7 +49,7 @@ wxObject::wxObject(void)
   wx_object_count++;
 }
 
-wxObject::wxObject(Bool cleanup) : gc((int)cleanup)
+wxObject::wxObject(Bool cleanup) : gc_cleanup((int)cleanup)
 {
   __type = wxTYPE_ANY;
 
