@@ -1,4 +1,7 @@
-; $Id: invoke.ss,v 1.39 1999/05/19 21:57:26 mflatt Exp $
+; $Id: invoke.ss,v 1.40 1999/05/27 15:48:55 mflatt Exp $
+
+(begin-elaboration-time
+ (require-library "cores.ss"))
 
 (require-library "coreu.ss")
 
