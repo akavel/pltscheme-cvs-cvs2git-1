@@ -1,4 +1,4 @@
-; $Id: scm-ou.ss,v 1.13 1998/03/14 21:28:01 mflatt Exp $
+; $Id: scm-ou.ss,v 1.14 1998/08/20 15:17:18 mflatt Exp $
 
 (unit/sig zodiac:scheme-objects+units^
   (import zodiac:misc^ (z : zodiac:structures^) (z : zodiac:reader-structs^)
@@ -39,6 +39,8 @@
 			      varref))))
 		  ((public-binding? r)
 		    (create-public-varref r expr))
+		  ((override-binding? r)
+		    (create-override-varref r expr))
 		  ((private-binding? r)
 		    (create-private-varref r expr))
 		  ((inherit-binding? r)
