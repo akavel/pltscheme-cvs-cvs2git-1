@@ -1,4 +1,4 @@
-/* $Id: fit.h,v 1.1 2003/08/15 22:17:49 cozmic Exp $ */
+/* $Id: fit.h,v 1.2 2003/10/27 02:35:27 cozmic Exp $ */
 
 /* GNUPLOT - fit.h */
 
@@ -40,4 +40,11 @@ double * do_fit(Scheme_Object * function,
 		double * errors,
 		int n_parameters,
 		double * parameters);
+
+
+double get_rms();
+double get_varience();
+double * get_asym_error();
+double * get_asym_error_percent();
+     
 
