@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_canvs.cxx,v 1.7 1998/08/21 00:31:39 mflatt Exp $
+ * RCS_ID:      $Id: wx_canvs.cxx,v 1.8 1998/09/23 01:11:13 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -529,8 +529,8 @@ void wxCanvas::PhysicalScroll(int x, int y, int w, int h,
     x2, y2);
 
   GetDC()->autoSetting = TRUE;
-  SetBrush(GetDC()->current_background_brush);
-//  SetBrush(wxRED_BRUSH);
+  GetDC()->SetBrush(wxTheBrushList->FindOrCreateBrush(&(GetDC()->current_background_color), wxSOLID));
+  //  SetBrush(wxRED_BRUSH);
 
   // We'll add rectangles to the list of update rectangles
   // according to which bits we've exposed.
