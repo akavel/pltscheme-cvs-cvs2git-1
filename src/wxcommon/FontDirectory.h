@@ -1,5 +1,5 @@
  /*								-*- C++ -*-
- * $Id: FontDirectory.h,v 1.2 1999/11/19 22:02:46 mflatt Exp $
+ * $Id: FontDirectory.h,v 1.3 1999/11/27 17:11:40 mflatt Exp $
  *
  * Purpose: wxWindows font name handling
  *
@@ -30,10 +30,11 @@
 #pragma interface
 #endif
 
+class wxHashTable;
 
 class wxFontNameDirectory : public wxObject
 {
-  class wxHashTable *table;
+  wxHashTable *table;
   int nextFontId;
  public:
   wxFontNameDirectory(void);
