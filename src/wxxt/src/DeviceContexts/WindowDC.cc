@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: WindowDC.cc,v 1.11 1998/10/10 15:27:57 mflatt Exp $
+ * $Id: WindowDC.cc,v 1.12 1998/10/16 15:55:54 mflatt Exp $
  *
  * Purpose: device context to draw drawables
  *          (windows and pixmaps, even if pixmaps are covered by wxMemoryDC)
@@ -173,7 +173,6 @@ Bool wxWindowDC::Blit(float xdest, float ydest, float w, float h, wxBitmap *src,
       SetPen(wxBLACK_PEN);
     }
 
-    // until I know how to scale bitmaps
     int scaled_width
 	= src->GetWidth()  < XLOG2DEVREL(w) ? src->GetWidth()  : XLOG2DEVREL(w);
     int scaled_height
