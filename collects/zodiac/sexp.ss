@@ -1,4 +1,4 @@
-; $Id: sexp.ss,v 1.18 1997/08/11 20:28:21 shriram Exp $
+; $Id: sexp.ss,v 1.19 1997/08/13 20:05:15 shriram Exp $
 
 (unit/sig zodiac:sexp^
   (import zodiac:misc^
@@ -116,11 +116,11 @@
 		(sanitized-sexp->raw (z:read-object expr)))
 	      (z:read-object expr)))
 	  ((z:vector? expr)
-	    '(vector ...))
+	    '#(...))
 	  ((z:list? expr)
-	    '(list ...))
+	    '(...))
 	  ((z:improper-list? expr)
-	    '(cons ...))
+	    '(... . ...))
 	  (else
 	    expr)))))
 
