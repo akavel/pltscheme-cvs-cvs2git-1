@@ -1,6 +1,6 @@
 ;;
 ;;  zodiac:scanner-parameters@
-;;  $Id: scanparm.ss,v 1.2 1997/05/06 18:36:21 krentel Exp $
+;;  $Id: scanparm.ss,v 1.3 1997/05/06 19:31:09 krentel Exp $
 ;;
 ;;  Scanner/Reader Parameters.
 ;;
@@ -18,10 +18,10 @@
    ;; so we specify the rest with ascii codes.
 
    (define  space    #\space)
-   (define  newline  #\newline)
    (define  nul       0)
    (define  backsp    8)
    (define  tab       9)
+   (define  newline  10)
    (define  vtab     11)
    (define  page     12)
    (define  return   13)
@@ -31,10 +31,10 @@
    
    (define  scan:self-delim-symbols  (list #\{ #\} ))
    
-   (define  scan:newline-list  (list  page  vtab  return  newline))
+   (define  scan:newline-list  (list  newline  return))
    (define  scan:tab-list      (list  tab))
    (define  scan:whitespace-list
-     (list  space  newline  tab  vtab  page  return))
+     (list  space  tab  newline  vtab  page  return))
 
    (define  scan:delim-list
      (append  scan:whitespace-list
