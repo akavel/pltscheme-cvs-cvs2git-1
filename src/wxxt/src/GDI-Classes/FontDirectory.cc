@@ -1,5 +1,5 @@
  /*								-*- C++ -*-
- * $Id: FontDirectory.cc,v 1.1.1.1 1997/12/22 17:28:51 mflatt Exp $
+ * $Id: FontDirectory.cc,v 1.2 1999/01/28 16:26:59 mflatt Exp $
  *
  * Purpose: wxWindows font name handling
  *
@@ -110,7 +110,7 @@ char *font_defaults[] = {
   "ScreenSlant", "o",
 
   "ScreenSystemBase", "*-lucida",
-  "ScreenDefaultBase", "misc-fixed",
+  "ScreenDefaultBase", "*-lucida",
   "ScreenRomanBase", "*-times",
   "ScreenDecorativeBase", "*-helvetica",
   "ScreenModernBase", "*-courier",
