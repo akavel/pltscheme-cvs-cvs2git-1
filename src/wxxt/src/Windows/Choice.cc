@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Choice.cc,v 1.11 1998/12/06 05:06:17 mflatt Exp $
+ * $Id: Choice.cc,v 1.12 1999/08/15 16:52:42 mflatt Exp $
  *
  * Purpose: choice panel item
  *
@@ -55,7 +55,7 @@ wxChoice::wxChoice(wxPanel *panel, wxFunction function, char *label,
 		   int x, int y, int width, int height,
 		   int n, char *choices[], long style, char *name) : wxItem()
 {
-    __type = wxTYPE_BUTTON;
+    __type = wxTYPE_CHOICE;
 
     choice_menu = DEBUG_NEW wxMenu(NULL, (wxFunction)&(wxChoice::MenuEventCallback));
     num_choices = 0;
