@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Window.cc,v 1.4 1998/02/05 23:00:33 mflatt Exp $
+ * $Id: Window.cc,v 1.5 1998/02/14 15:04:24 mflatt Exp $
  *
  * Purpose: base class for all windows
  *
@@ -1150,6 +1150,7 @@ void wxWindow::FrameEventHandler(Widget w,
 	      break;
 	    p = p->GetParent();
 	  }
+	  /* No parent? Can't iconize. */
 	  if (!p) {
             if (win->IsShown()) {
               ((wxDialogBox *)win)->Iconize(FALSE);
