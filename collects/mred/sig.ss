@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.68 1997/07/11 20:10:08 krentel Exp $
+;; $Id: sig.ss,v 1.69 1997/07/11 21:33:09 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -77,7 +77,8 @@
    multi-text%
    canvas%
    media-canvas%
-   text-window%))
+   text-window%
+   canvas-message%))
 
 (define-signature mred:hyper-loader^
   (open-hyper-make
@@ -140,7 +141,8 @@
    multi-text%
    canvas%
    media-canvas%
-   text-window%))
+   text-window%
+   canvas-message%))
 
 (define-signature mred:container-panels^
   (debug-borders
