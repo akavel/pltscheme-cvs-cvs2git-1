@@ -1,3 +1,7 @@
+;;
+;; $Id: link.ss,v 1.34 1997/07/02 21:31:03 krentel Exp $
+;;
+
   (compound-unit/sig
     (import [core : mzlib:core^]
 	    [trigger : mzlib:trigger^]
@@ -14,10 +18,14 @@
 				    constants
 				    (core function@)
 				    (core string@))]
+          [self-test : mred:self-test^
+                     ((reference-unit/sig  "stlink.ss")  wx)]
 	  [connections : mred:connections^
 		       ((reference-unit/sig "connect.ss")
 			wx
-			constants (core function@))]
+			constants 
+                        (core function@)
+                        self-test)]
 	  [exn : mred:exn^ ((reference-unit/sig "exn.ss") constants)]
 	  [container : mred:container^
 		     ((reference-unit/sig "containr.ss") wx 
@@ -159,4 +167,5 @@
 	    (open panel) (open paren) (open project)
 	    (open scheme-paren) (open scheme-mode) 
 	    (open hyper-edit) (open hyper-dialog) (open hyper-frame)
+            (unit (self-test : mred:self-test-export^) test)
 	    (open url)))
