@@ -1,6 +1,6 @@
-; $Id: sigs.ss,v 1.44 1997/09/20 18:51:55 shriram Exp $
+; $Id: sigs.ss,v 1.45 1997/11/14 21:59:49 mflatt Exp $
 
-(reference "namedarg.ss")
+(reference-relative-library "namedarg.ss")
 
   (define-argument-list zodiac:scheme-expand/nal
     (kwd expression: expr)
