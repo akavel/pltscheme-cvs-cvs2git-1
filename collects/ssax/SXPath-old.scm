@@ -73,7 +73,7 @@
 ; Rename filter to node-filter or ns-filter
 ; Use ;=== for chapters, ;--- for sections, and ;^^^ for end sections
 ;
-; $Id: SXPath-old.scm,v 1.1 2004/10/02 07:50:48 eli Exp $
+; $Id: SXPath-old.scm,v 1.2 2004/11/09 14:11:40 sperber Exp $
 
 
 	; See http://pobox.com/~oleg/ftp/Scheme/myenv.scm

@@ -47,7 +47,7 @@
 ; See http://pobox.com/~oleg/ftp/Scheme/xml.html#XML-authoring
 ; for more examples and explanation.
 ;
-; $Id: SXML-to-HTML.scm,v 1.1 2004/10/02 07:50:48 eli Exp $
+; $Id: SXML-to-HTML.scm,v 1.2 2004/11/09 14:11:40 sperber Exp $
 
 
 ; The following procedure is the most generic transformation of SXML

@@ -32,7 +32,7 @@
 ; If a particular implementation lacks SRFI-13 support, please
 ; include the file srfi-13-local.scm
 ;
-; $Id: input-parse.scm,v 1.1 2004/10/02 07:50:49 eli Exp $
+; $Id: input-parse.scm,v 1.2 2004/11/09 14:11:40 sperber Exp $
 
 ;------------------------------------------------------------------------
 

@@ -12,7 +12,7 @@
 ; See vSXML-tree-trans.scm for the validation code, which also
 ; serves as usage examples.
 ;
-; $Id: SXML-tree-trans.scm,v 1.1 2004/10/02 07:50:48 eli Exp $
+; $Id: SXML-tree-trans.scm,v 1.2 2004/11/09 14:11:40 sperber Exp $
 
 
 ; Output the 'fragments'
