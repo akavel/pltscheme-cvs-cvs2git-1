@@ -1,4 +1,4 @@
-; $Id: scm-obj.ss,v 1.34 1998/04/21 02:59:56 robby Exp $
+; $Id: scm-obj.ss,v 1.35 1998/05/08 22:15:23 mflatt Exp $
 
 (unit/sig zodiac:scheme-objects^
   (import zodiac:misc^ (z : zodiac:structures^) (z : zodiac:reader-structs^)
@@ -677,7 +677,7 @@
       (let* ((kwd '())
 	      (in-pattern '(_ class name))
 	      (m&e (pat:make-match&env in-pattern kwd))
-	      (out-pattern '(#%uq-make-generic class (quote name))))
+	      (out-pattern '(#%make-generic/proc class (quote name))))
 	(lambda (expr env)
 	  (or (pat:match-and-rewrite expr m&e out-pattern kwd env)
 	    (static-error expr "Malformed make-generic"))))))
