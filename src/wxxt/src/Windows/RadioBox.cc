@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: RadioBox.cc,v 1.13 1999/11/25 20:47:00 mflatt Exp $
  *
  * Purpose: radio box panel item
  *
@@ -341,11 +340,6 @@ wxRadioBox::~wxRadioBox(void)
 	XtVaSetValues(((Widget*)toggles)[i], XtNpixmap, NULL, NULL);
       }
     }
-  }
-
-  if (num_toggles) {
-    // delete toggles;
-    num_toggles = 0;
   }
 }
 

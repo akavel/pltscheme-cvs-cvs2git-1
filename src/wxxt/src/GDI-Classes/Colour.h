@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Colour.h,v 1.5 1999/11/21 00:08:48 mflatt Exp $
+ * $Id: Colour.h,v 1.6 1999/11/28 05:21:34 mflatt Exp $
  *
  * Purpose: classes to cover colours and colourmaps
  *
@@ -26,8 +26,10 @@
 #ifndef Colour_h
 #define Colour_h
 
-#ifdef __GNUG__
-#pragma interface
+#ifndef MZ_PRECISE_GC
+# ifdef __GNUG__
+# pragma interface
+# endif
 #endif
 
 #ifdef Have_X_Types

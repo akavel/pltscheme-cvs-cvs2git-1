@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Resources.cc,v 1.7 1999/11/24 21:20:20 mflatt Exp $
+ * $Id: Resources.cc,v 1.8 1999/11/28 05:21:34 mflatt Exp $
  *
  * Purpose: read/write .Xdefaults
  *
@@ -178,7 +178,7 @@ void wxFlushResources(void)
     XrmPutFileDatabase(database, nameBuffer);
     XrmDestroyDatabase(database);
     next = node->Next();
-    delete node;
+    DELETE_OBJ node;
     node = next;
   }
 }
