@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Choice.cc,v 1.3 1998/04/10 15:07:20 mflatt Exp $
+ * $Id: Choice.cc,v 1.4 1998/07/08 22:01:12 mflatt Exp $
  *
  * Purpose: choice panel item
  *
@@ -204,7 +204,7 @@ char *wxChoice::GetStringSelection(void)
 
 void wxChoice::SetSelection(int n)
 {
-    if (0 <= n && n <= num_choices) {
+    if (0 <= n && n < num_choices) {
 	selection = n;
 	char *label = GetString(selection);
 	XtVaSetValues(X->handle, XtNlabel, label, NULL);
