@@ -2,7 +2,7 @@
 ;;
 ;; program-tests.ss
 ;; Richard Cobbe
-;; $Id: program-tests.ss,v 1.5 2004/08/24 20:35:21 cobbe Exp $
+;; $Id: program-tests.ss,v 1.6 2004/12/31 22:12:15 cobbe Exp $
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -11,6 +11,7 @@
   (require (lib "test.ss" "test")
            "parser.ss"
            "ast.ss")
+  (provide program-tests)
 
   (require/expose "program.ss" ())
 
@@ -29,7 +30,7 @@
        (class G C ([B b]))
        (+ 3 4))))
 
-  (schemeunit-test
+  (define program-tests
    (make-test-suite
        "ClassicJava Program module"
 
