@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Frame.cc,v 1.9 1998/09/18 22:08:58 mflatt Exp $
+ * $Id: Frame.cc,v 1.10 1998/11/17 13:11:48 mflatt Exp $
  *
  * Purpose: base class for all frames
  *
@@ -279,6 +279,8 @@ Bool wxFrame::Iconized(void)
     return FALSE;
 
   XWindowAttributes wa;
+
+  XSync(XtDisplay(X->frame), FALSE);
 
   XGetWindowAttributes(XtDisplay(X->frame), XtWindow(X->frame), &wa);
 

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Choice.h,v 1.4 1998/11/12 18:14:45 mflatt Exp $
+ * $Id: Choice.h,v 1.5 1998/11/17 13:11:48 mflatt Exp $
  *
  * Purpose: choice panel item
  *
@@ -69,6 +69,7 @@ public:
     void Command(wxCommandEvent &event);
 
     void OnEvent(wxMouseEvent&);
+    void OnChar(wxKeyEvent&);
 
 private:
 #   ifdef Have_Xt_Types

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: ListBox.h,v 1.3 1998/02/05 23:00:32 mflatt Exp $
+ * $Id: ListBox.h,v 1.4 1998/11/17 13:11:49 mflatt Exp $
  *
  * Purpose: list box panel item
  *
@@ -76,6 +76,7 @@ public:
     void  SetFirstItem(int n);
     void  SetFirstItem(char *s);
     void  SetSelection(int c, Bool select = TRUE);
+    void  SetOneSelection(int c);
     Bool  SetStringSelection(char *s);
     int   GetFirstItem();
     int   NumberOfVisibleItems();
