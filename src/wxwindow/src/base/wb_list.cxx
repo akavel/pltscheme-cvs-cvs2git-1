@@ -4,7 +4,7 @@
  * Author:		Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:	$Id: wb_list.cxx,v 1.2 1998/02/03 18:49:56 mflatt Exp $
+ * RCS_ID:	$Id: wb_list.cxx,v 1.3 1998/02/08 15:05:31 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -806,7 +806,7 @@ void wxChildList::Show(wxObject *object, int show)
     if (nodes[i] && (nodes[i]->Data() == object)) {
       wxChildNode *node = nodes[i];
 
-      if (show) {
+      if (show > 0) {
 	if (node->strong)
 	  return;
 	node->strong = object;
@@ -816,6 +816,8 @@ void wxChildList::Show(wxObject *object, int show)
 	  return;
 	node->weak = new WXGC_ATOMIC wxObject*;
 	*node->weak = object;
+	if (show < 0)
+	  GC_general_register_disappearing_link((void **)node->weak, object);
 	node->strong = NULL;
       }
       return;
