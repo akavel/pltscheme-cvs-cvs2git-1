@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: GlobalData.h,v 1.2 1998/04/11 13:57:29 mflatt Exp $
+ * $Id: GlobalData.h,v 1.3 1998/08/05 23:56:30 mflatt Exp $
  *
  * Purpose: global data for an application (UNSHARED)
  *
@@ -130,7 +130,6 @@ extern int   wxCursorBusy;
 //-- Printing -----------------------------------------------------------------
 
 extern wxPrintPaperDatabase* wxThePrintPaperDatabase;
-extern wxPrintSetupData*     wxThePrintSetupData;
 
 //-- Prolog IO ----------------------------------------------------------------
 
