@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	April 1995
- * RCS_ID:      $Id: wx_item.cxx,v 1.1 1997/12/22 16:12:05 mflatt Exp $
+ * RCS_ID:      $Id: wx_item.cxx,v 1.1.1.1 1997/12/22 16:12:05 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 

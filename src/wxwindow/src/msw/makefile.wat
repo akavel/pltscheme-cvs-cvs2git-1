@@ -4,7 +4,7 @@
 # Author:	Edward C. Zimmermann <edz@crg.net>
 # Created:	1994
 # Updated:	Dmitri Chubraev, Nov.1994 <chubraev@iem.ee.ethz.ch>
-# RCS_ID        $Id: makefile.wat,v 1.1 1997/12/22 16:12:02 mflatt Exp $
+# RCS_ID        $Id: makefile.wat,v 1.1.1.1 1997/12/22 16:12:02 mflatt Exp $
 #
 # Makefile : Builds wxWindows library for Windows 3.1
 # and Watcom C++ 

@@ -4,16 +4,16 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_dialg.cxx,v 1.1 1997/12/22 16:12:04 mflatt Exp $
+ * RCS_ID:      $Id: wx_dialg.cxx,v 1.1.1.1 1997/12/22 16:12:04 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
 // $Log: wx_dialg.cxx,v $
-// Revision 1.1  1997/12/22 16:12:04  mflatt
-// Initial revision
+// Revision 1.1.1.1  1997/12/22 16:12:04  mflatt
+// import
 //
-// Revision 1.1  1997-12-22 16:12:04  mflatt
-// Initial revision
+// Revision 1.1.1.1  1997-12-22 16:12:04  mflatt
+// import
 //
 // Revision 1.62  1994/11/02  22:18:47  edz
 // Minor changes.
