@@ -1,4 +1,4 @@
-; $Id: link.ss,v 1.15 1998/11/04 19:52:53 mflatt Exp $
+; $Id: link.ss,v 1.16 1999/02/02 19:33:14 mflatt Exp $
 
 (compound-unit/sig 
   (import
@@ -64,7 +64,7 @@
     [SCHEME-UNIT : zodiac:scheme-units^
       ((require-relative-library-unit/sig "scm-unit.ss")
 	MISC TOP-STRUCTS SCAN-PARMS READ-STRUCTS READ-CODE SEXP
-	PATTERN SCHEME-CORE SCHEME-MAIN BACK-PROTOCOL EXPANDER INTERFACE)]
+	PATTERN SCHEME-CORE SCHEME-MAIN SCHEME-OBJ BACK-PROTOCOL EXPANDER INTERFACE)]
     [SCHEME-OBJ+UNIT : zodiac:scheme-objects+units^
       ((require-relative-library-unit/sig "scm-ou.ss")
 	MISC TOP-STRUCTS READ-STRUCTS SEXP PATTERN EXPANDER INTERFACE
