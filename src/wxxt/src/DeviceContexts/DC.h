@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: DC.h,v 1.12 1999/11/30 22:20:07 mflatt Exp $
+ * $Id: DC.h,v 1.13 2000/04/15 01:38:39 mflatt Exp $
  *
  * Purpose: basic device context
  *
@@ -163,7 +163,7 @@ public:
 	{ return YDEV2LOGREL(y); }
     void  DrawSpline(int n, wxPoint pts[]);
     void  DrawSpline(wxList *pts);
-    void  DrawSpline(float x1,float y1, float x2,float y2, float x3,float y3);
+    virtual void DrawSpline(float x1,float y1, float x2,float y2, float x3,float y3);
     void  EndDrawing(void)
 	{}
     wxColour *GetBackground(void);
