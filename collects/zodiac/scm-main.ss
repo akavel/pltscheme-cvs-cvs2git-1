@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.129 1997/09/16 16:45:56 shriram Exp $
+; $Id: scm-main.ss,v 1.130 1997/09/16 17:05:38 shriram Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -1496,7 +1496,12 @@
 			  (user-exn-handler))
 			(real-handler (begin
 					(user-exn-handler
-					  (current-exception-handler))
+					  (lambda args
+					    (printf
+					      "Entering exn handler in userspc"
+					      (apply
+						(current-exception-handler)
+						args))))
 					(begin0
 					  (with-parameterization
 					    zodiac-user-parameterization
