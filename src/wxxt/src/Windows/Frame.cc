@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Frame.cc,v 1.16 1999/07/07 19:54:35 mflatt Exp $
+ * $Id: Frame.cc,v 1.17 1999/07/08 14:19:36 mflatt Exp $
  *
  * Purpose: base class for all frames
  *
@@ -356,6 +356,7 @@ void wxFrame::SetIcon(wxBitmap *icon, wxBitmap *mask)
       XtVaSetValues(X->frame, XtNiconPixmap, GETPIXMAP(bm), NULL);
       
       frame_icon = bm;
+      frame_mask = mask;
     }
   }
 }
