@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.193 1999/07/19 16:25:54 mflatt Exp $
+; $Id: scm-main.ss,v 1.194 1999/10/21 04:53:21 shriram Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -1351,7 +1351,7 @@
   (define-struct cond-clause (text question answer else? =>? or?))
 
   (define (make-cond-clause-vocab)
-    (let([qa-error-msg "Not a clause in question-answer format"])
+    (let([qa-error-msg "Clause is not in question-answer format"])
       (create-vocabulary 'cond-clause-vocab #f
 			 qa-error-msg    ; symbol
 			 qa-error-msg    ; literal
