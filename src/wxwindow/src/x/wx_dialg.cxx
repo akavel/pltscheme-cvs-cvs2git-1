@@ -4,15 +4,18 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_dialg.cxx,v 1.7 1998/08/09 20:55:25 mflatt Exp $
+ * RCS_ID:      $Id: wx_dialg.cxx,v 1.8 1998/08/21 00:31:40 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
 // $Log: wx_dialg.cxx,v $
-// Revision 1.7  1998/08/09 20:55:25  mflatt
+// Revision 1.8  1998/08/21 00:31:40  mflatt
 // .
 //
-// Revision 1.7  1998-08-09 20:55:25  mflatt
+// Revision 1.8  1998-08-21 00:31:40  mflatt
+// .
+//
+// Revision 1.7  1998/08/09 20:55:25  mflatt
 // .
 //
 // Revision 1.6  1998/07/13 19:08:21  mflatt
@@ -320,7 +323,7 @@ Bool wxDialogBox::Create(wxWindow *Parent, char *Title, Bool Modal,
   // This patch come from Torsten Liermann lier@lier1.muc.de
   if (XmIsMotifWMRunning(wxTheApp->topLevel)) {
     int decor = 0 ;
-    if (style & wxSYSTEM_MENU)
+    if (!(style & wxNO_SYSTEM_MENU))
       decor |= MWM_DECOR_MENU;
     if (!(style & wxNO_CAPTION))
       decor |= MWM_DECOR_TITLE;
