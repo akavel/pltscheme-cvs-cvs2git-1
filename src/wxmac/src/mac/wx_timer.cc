@@ -4,7 +4,7 @@
  * Author:      Julian Smart/Cecil Coupe
  * Created:     1993
  * Updated:	August 1995
- * RCS_ID:      $Id: wx_timer.cc,v 1.1 1998/01/13 17:55:00 mflatt Exp $
+ * RCS_ID:      $Id: wx_timer.cc,v 1.1.1.1 1998/01/13 17:55:00 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
