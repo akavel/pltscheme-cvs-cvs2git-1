@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Resources.cc,v 1.4 1999/11/04 17:25:37 mflatt Exp $
+ * $Id: Resources.cc,v 1.5 1999/11/12 17:27:50 mflatt Exp $
  *
  * Purpose: read/write .Xdefaults
  *
@@ -165,7 +165,7 @@ void wxFlushResources(void)
 
     wxNode *node = wxResourceCache.First();
     while (node) {
-	char *file = node->key.string;
+	char *file = node->string_key;
 	// If file doesn't exist, create it first.
 	(void)GetResourcePath(nameBuffer, file, TRUE);
 
