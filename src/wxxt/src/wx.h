@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: wx.h,v 1.6 1999/11/25 22:57:29 mflatt Exp $
+ * $Id: wx.h,v 1.7 1999/12/05 03:14:01 mflatt Exp $
  *
  * Purpose: wxWindows Xt-port main include file
  *
@@ -504,10 +504,6 @@
 
 #if USE_GAUGE && defined(Uses_wxGauge)
 #	include "Windows/Gauge.h"
-#endif
-
-#if defined(Uses_wxGroupBox)
-#	include "Windows/GroupBox.h"
 #endif
 
 #if defined(Uses_wxListBox)
