@@ -1,10 +1,10 @@
-; $Id: load.ss,v 1.17 1997/07/21 15:51:43 shriram Exp $
+; $Id: load.ss,v 1.18 1997/09/04 15:54:21 shriram Exp $
 
 (reference-library "macro.ss")
 (reference-library "cores.ss")
 
-(reference "zsigs.ss")
-(reference "sigs.ss")
+(reference-library "zsigs.ss")
+(reference-library "sigs.ss")
 
 ; All this stuff needs to be disappeared.
 
