@@ -1,5 +1,4 @@
  /*								-*- C++ -*-
- * $Id: Font.cc,v 1.14 1999/11/29 21:13:03 mflatt Exp $
  *
  * Purpose: wxWindows font handling
  *
