@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_main.cxx,v 1.2 1998/02/10 02:50:18 mflatt Exp $
+ * RCS_ID:      $Id: wx_main.cxx,v 1.3 1998/03/07 00:37:49 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -196,9 +196,9 @@ int wxEntry(int argc, char *argv[])
   Display *dpy = XtOpenDisplay(wxTheApp->appContext,(String)NULL,NULL,
 			       wxTheApp->GetClassName(),NULL,
 #  if XtSpecificationRelease < 5
-			       0,(Cardinal*) &argc, argv
+			       0,(Cardinal*) &xargc, argv
 #  else
-			       0,&argc,argv
+			       0,&xargc,argv
 #  endif
 			       );
   if (!dpy) {
