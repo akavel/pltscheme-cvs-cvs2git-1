@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: wx.h,v 1.1.1.1 1997/12/22 17:28:41 mflatt Exp $
+ * $Id: wx.h,v 1.2 1998/09/23 00:11:53 mflatt Exp $
  *
  * Purpose: wxWindows Xt-port main include file
  *
@@ -398,6 +398,10 @@
 
 #if defined(Uses_wxPenBrush)
 #	include "GDI-Classes/Pen+Brush.h"
+#endif
+
+#if defined(Uses_wxRegion)
+#	include "GDI-Classes/Region.h"
 #endif
 
 //--- device contexts ---------------------------------------------------------
