@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: EvtHandler.cc,v 1.5 1999/07/14 23:34:08 mflatt Exp $
+ * $Id: EvtHandler.cc,v 1.6 1999/08/05 21:45:31 mflatt Exp $
  *
  * Purpose: base event handler of windows etc.
  *
@@ -179,7 +179,8 @@ KeySym CharCodeWXToX(int id)
 
 Bool wxIsAlt(KeySym key_sym)
 {
-  if ((key_sym == XK_Alt_L) || (key_sym == XK_Alt_R)) {
+  if ((key_sym == XK_Alt_L) || (key_sym == XK_Alt_R)
+      || (key_sym == XK_Meta_L) || (key_sym == XK_Meta_R)) {
     return TRUE;
   }
   return FALSE;
