@@ -209,6 +209,6 @@
     ; Query the user for a file and then edit it
     (define open-file
       (lambda ()
-	(let ((file (mred:finder:get-file)))
+	(let ([file (mred:finder:get-file)])
 	  (and file
 	       (edit-file file))))))
