@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.75 1997/10/09 22:05:00 robby Exp $
+;; $Id: sig.ss,v 1.76 1997/10/16 15:45:56 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -189,6 +189,9 @@
    credits
    copyright-string
    welcome-message
+
+   separator-snip%
+
    console-max-save-previous-exprs
    
    show-interactions-history
