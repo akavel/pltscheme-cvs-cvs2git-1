@@ -1,7 +1,7 @@
 #
 # 1.0 (Feb 1995)
 #
-# $Id: xwCanvas.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwCanvas.w,v 1.2 1999/08/28 16:14:51 mflatt Exp $
 
 @class XfwfCanvas (XfwfBoard) @file=xwCanvas
 
@@ -48,5 +48,6 @@ widget.
 	    XChangeWindowAttributes(XtDisplay($), XtWindow($), mask, &attributes);
 	}
     }
+
     return FALSE; /* there is no need to redraw */
 }
