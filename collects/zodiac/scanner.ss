@@ -1,6 +1,6 @@
 ;;
 ;;  zodiac:scanner-code@
-;;  $Id: scanner.ss,v 1.10 1998/08/26 19:46:11 mflatt Exp $
+;;  $Id: scanner.ss,v 1.11 1998/11/04 19:52:54 mflatt Exp $
 ;;
 ;;  Zodiac Scanner  July 96.
 ;;  mwk, plt group, Rice university.
@@ -24,7 +24,6 @@
   (import zodiac:structures^
 	  zodiac:scanner-structs^
 	  (zodiac : zodiac:reader-structs^)
-	  (parm : plt:parameters^)
 	  zodiac:scanner-parameters^
 	  (report : zodiac:interface^))
   

@@ -1,4 +1,4 @@
-; $Id: scm-ou.ss,v 1.14 1998/08/20 15:17:18 mflatt Exp $
+; $Id: scm-ou.ss,v 1.15 1998/11/04 19:52:55 mflatt Exp $
 
 (unit/sig zodiac:scheme-objects+units^
   (import zodiac:misc^ (z : zodiac:structures^) (z : zodiac:reader-structs^)
@@ -59,6 +59,8 @@
 			"Invalid use of keyword ~a" (z:symbol-orig-name expr))))
 		  (else
 		    (internal-error expr "Invalid resolution in ou: ~s" r))))))))
+
+    (add-sym-micro full-vocabulary handler)
     (add-sym-micro scheme-vocabulary handler)
     (add-sym-micro unit-clauses-vocab-delta handler))
 

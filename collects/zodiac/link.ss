@@ -1,9 +1,8 @@
-; $Id: link.ss,v 1.14 1998/04/21 02:59:55 robby Exp $
+; $Id: link.ss,v 1.15 1998/11/04 19:52:53 mflatt Exp $
 
 (compound-unit/sig 
   (import
     (INTERFACE : zodiac:interface^)
-    (PARAMETERS : plt:parameters^)
     (PRETTY : mzlib:pretty-print^)
     (MZLIB-FILE : mzlib:file^))
   (link
@@ -23,11 +22,11 @@
     [SCAN-CODE : zodiac:scanner-code^
       ((require-relative-library-unit/sig "scanner.ss")
 	TOP-STRUCTS SCAN-STRUCTS READ-STRUCTS 
-	PARAMETERS SCAN-PARMS INTERFACE)]
+	SCAN-PARMS INTERFACE)]
     [READ-CODE : zodiac:reader-code^
       ((require-relative-library-unit/sig "reader.ss")
 	TOP-STRUCTS SCAN-STRUCTS READ-STRUCTS
-	PARAMETERS SCAN-PARMS INTERFACE SCAN-CODE)]
+	SCAN-PARMS INTERFACE SCAN-CODE)]
     [SEXP : zodiac:sexp^
       ((require-relative-library-unit/sig "sexp.ss")
 	MISC TOP-STRUCTS READ-STRUCTS INTERFACE)]
@@ -47,12 +46,12 @@
     [SCHEME-CORE : zodiac:scheme-core^
       ((require-relative-library-unit/sig "scm-core.ss")
 	TOP-STRUCTS MISC SEXP READ-STRUCTS
-	BACK-PROTOCOL EXPANDER INTERFACE PATTERN PARAMETERS)]
+	BACK-PROTOCOL EXPANDER INTERFACE PATTERN)]
     [SCHEME-MAIN : zodiac:scheme-main^
       ((require-relative-library-unit/sig "scm-main.ss")
 	MISC TOP-STRUCTS SCAN-PARMS
 	READ-STRUCTS READ-CODE SEXP
-	PATTERN SCHEME-CORE BACK-PROTOCOL EXPANDER INTERFACE PARAMETERS)]
+	PATTERN SCHEME-CORE BACK-PROTOCOL EXPANDER INTERFACE)]
     [SCHEME-SPIDEY : zodiac:scheme-mrspidey^
       ((require-relative-library-unit/sig "scm-spdy.ss")
 	MISC TOP-STRUCTS SCAN-PARMS READ-STRUCTS READ-CODE SEXP PATTERN
