@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_gdi.cxx,v 1.12 1998/11/18 22:05:15 mflatt Exp $
+ * RCS_ID:      $Id: wx_gdi.cxx,v 1.13 1999/01/09 19:18:39 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -171,7 +171,7 @@ HFONT wxFont::BuildInternalFont(HDC dc, Bool screenFont)
   
   Bool ff_underline = underlined;
   
-  cfont = CreateFont(nHeight, 0, 0, 0,ff_weight,ff_italic,(BYTE)ff_underline,
+  cfont = CreateFont(-nHeight, 0, 0, 0,ff_weight,ff_italic,(BYTE)ff_underline,
 		     0, ANSI_CHARSET, OUT_DEFAULT_PRECIS, CLIP_DEFAULT_PRECIS,
 		     PROOF_QUALITY, DEFAULT_PITCH | ff_family, ff_face);
   
