@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: ListBox.cc,v 1.9 1998/08/08 03:33:04 mflatt Exp $
+ * $Id: ListBox.cc,v 1.10 1998/09/08 15:07:57 mflatt Exp $
  *
  * Purpose: list box panel item
  *
@@ -161,7 +161,6 @@ void wxListBox::SetSize(int x, int y, int width, int height, int flags)
     if (width > -1)
 	XtVaSetValues(X->handle, XtNlongest, Dimension(width), NULL); 
     wxItem::SetSize(x, y, width, height, flags);
-    /* MATTHEW: [6] */
     XtVaSetValues(X->handle, XtNwidth, 0, NULL);
 }
 

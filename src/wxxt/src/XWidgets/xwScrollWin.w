@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 1.1 (see README for history)
 # 
-# $Id: xwScrollWin.w,v 1.6 1998/08/14 21:44:44 mflatt Exp $
+# $Id: xwScrollWin.w,v 1.7 1998/09/08 15:08:01 mflatt Exp $
 
 @CLASS XfwfScrolledWindow (XfwfBoard)  @file = xwScrollWin
 
@@ -296,6 +296,7 @@ board.
 	/* propagate key events from frame to child widget */
 	if ($traverseToChild)
 	    XtVaSetValues($frame, XtNpropagateTarget, $CW, NULL);
+	XtVaSetValues($board, XtNpropagateTarget, $CW, NULL);
 	configure($, $, NULL, &dummy);
     } else {
 	char s[500];
