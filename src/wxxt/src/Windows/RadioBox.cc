@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: RadioBox.cc,v 1.8 1998/10/16 15:55:55 mflatt Exp $
+ * $Id: RadioBox.cc,v 1.9 1999/08/09 14:51:30 mflatt Exp $
  *
  * Purpose: radio box panel item
  *
@@ -259,7 +259,7 @@ Bool wxRadioBox::Create(wxPanel *panel, wxFunction func, char *label,
 	  choices[i]->selectedIntoDC++;
 	} else {
 	  kind = XtNlabel;
-	  label = "<bad-image>";
+	  label = (char *)"<bad-image>";
 	  bm_labels[i] = NULL;
 	}
 
@@ -319,7 +319,7 @@ wxRadioBox::~wxRadioBox(void)
   }
 
   if (num_toggles) {
-    delete toggles;
+    // delete toggles;
     num_toggles = 0;
   }
 }

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Path.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: Path.cc,v 1.2 1999/08/09 14:51:29 mflatt Exp $
  *
  * Purpose: path- and filename manipulations
  *
@@ -117,7 +117,7 @@ char *wxExpandPath(char *buf, const char *name)
 	} else {
 	    if (*s++ == '$') {
 		register char  *start = d;
-		register        braces = (*s == '{' || *s == '(');
+		register int   braces = (*s == '{' || *s == '(');
 		register char  *value;
 		while ((*d++ = *s))
 		    if (braces ? (*s == '}' || *s == ')') :
