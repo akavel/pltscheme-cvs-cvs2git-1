@@ -4,7 +4,7 @@
 ;; Richard Cobbe
 ;; July 2004
 ;;
-;; $Id: store.ss,v 1.2 2004/12/31 18:05:04 cobbe Exp $
+;; $Id: store.ss,v 1.3 2004/12/31 22:07:58 cobbe Exp $
 ;;
 ;; Implementation of a functional store.  This store is an alist, but note that
 ;; store-update does not produce a longer alist; this is helpful for debugging
@@ -88,4 +88,4 @@
    [empty-store     store?]
    [store?          (-> any? boolean?)])
 
-  (provide [rename build-store store)))
+  (provide [rename build-store store]))
