@@ -171,10 +171,7 @@
 	       [browse (make-object mred:container:button%
 				    bottom
 				    (lambda x
-				      (let ([ans 
-					     (parameterize ([mred:finder:dialog-parent-parameter
-							     frame])
-					       (mred:finder:get-file))])
+				      (let ([ans (mred:finder:get-file)])
 					(when ans
 					  (send* answer
 					    (begin-edit-sequence)
