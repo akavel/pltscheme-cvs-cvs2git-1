@@ -1,4 +1,4 @@
-; $Id: sexp.ss,v 1.20 1997/12/04 17:27:39 mflatt Exp $
+; $Id: sexp.ss,v 1.21 1998/07/14 20:25:03 shriram Exp $
 
 (unit/sig zodiac:sexp^
   (import zodiac:misc^
@@ -9,8 +9,8 @@
   (define identity (lambda (x) x))
 
   (define structurize-syntax
-    (let ((origin (make-origin 'non-source 'never-mind)))
-      (opt-lambda (expr source (marks '()) (table #f))
+    (let ((default-origin (make-origin 'non-source 'never-mind)))
+      (opt-lambda (expr source (marks '()) (table #f) (origin default-origin))
 	(let ((start (zodiac-start source))
 	       (finish (zodiac-finish source)))
 	  (letrec
