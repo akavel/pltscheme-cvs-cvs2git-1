@@ -1,8 +1,6 @@
 # XfwfCommon -- the common superclass for all widgets
 # Bert Bos <bert@let.rug.nl>
 # Version 1.2 for FWF V4.0
-#
-# $Id: xwCommon.w,v 1.11 2001/12/06 16:20:24 mflatt Exp $
 
 @class XfwfCommon (Composite)  @file=xwCommon
 
