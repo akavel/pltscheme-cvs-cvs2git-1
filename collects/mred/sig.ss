@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.77 1997/10/16 21:46:25 robby Exp $
+;; $Id: sig.ss,v 1.78 1997/10/16 21:55:00 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -285,7 +285,7 @@
    info-frame%
    info-file-frame%
    pasteboard-frame%
-   pasteboard-file-frame%))
+   pasteboard-info-file-frame%))
 
 (define-signature mred:editor-frame^
   (make-editor-frame%
