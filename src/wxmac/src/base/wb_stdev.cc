@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_stdev.cc,v 1.5 1998/09/09 16:14:27 mflatt Exp $
+ * RCS_ID:      $Id: wb_stdev.cc,v 1.6 2001/08/02 12:15:32 clements Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -285,7 +285,7 @@ Bool wxMouseEvent::Leaving(void)
   return (eventType == wxEVENT_TYPE_LEAVE_WINDOW) ;
 }
 
-void wxMouseEvent::Position(float *xpos, float *ypos)
+void wxMouseEvent::Position(int *xpos, int *ypos)
 {
   *xpos = x;
   *ypos = y;
@@ -326,7 +326,7 @@ long wxKeyEvent::KeyCode(void)
   return keyCode;
 }
 
-void wxKeyEvent::Position(float *xpos, float *ypos)
+void wxKeyEvent::Position(int *xpos, int *ypos)
 {
   *xpos = x;
   *ypos = y;
