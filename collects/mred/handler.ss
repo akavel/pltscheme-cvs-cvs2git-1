@@ -12,6 +12,7 @@
 	    [mred:container : mred:container^]
 	    [mred:edit : mred:edit^]
 	    [mred:preferences : mred:preferences^]
+	    [mred:test : mred:testable-window^]
 	    [mzlib:file : mzlib:file^])
 	    
     (mred:debug:printf 'invoke "mred:handler@")
@@ -144,7 +145,10 @@
 
     (define get-url-from-user
       (lambda ()
-	(let* ([frame (make-object mred:container:dialog-box% '() "Choose URL" #t)]
+	(let* ([frame (make-object mred:container:dialog-box% 
+				   (or (mred:test:test:get-active-frame)
+				       null)
+				   "Choose URL" #t)]
 	       [main (make-object mred:container:vertical-panel% frame)]
 	       [one-line (make-object mred:canvas:one-line-canvas% main)]
 	       [valid? #f]
@@ -167,7 +171,10 @@
 	       [browse (make-object mred:container:button%
 				    bottom
 				    (lambda x
-				      (let ([ans (mred:finder:get-file)])
+				      (let ([ans 
+					     (parameterize ([mred:finder:dialog-parent-parameter
+							     frame])
+					       (mred:finder:get-file))])
 					(when ans
 					  (send* answer
 					    (begin-edit-sequence)
@@ -209,6 +216,9 @@
     ; Query the user for a file and then edit it
     (define open-file
       (lambda ()
-	(let ([file (mred:finder:get-file)])
+	(let ([file 
+	       (parameterize ([mred:finder:dialog-parent-parameter
+			       (mred:test:test:get-active-frame)])
+		 (mred:finder:get-file))])
 	  (and file
 	       (edit-file file))))))
