@@ -16,7 +16,7 @@ include xtmake.env
 #
 # Motif Release 1.2
 #
-#   $RCSfile: GNUmakefile,v $ $Revision: 1.4 $ $Date: 1999/11/19 16:28:10 $
+#   $RCSfile: GNUmakefile,v $ $Revision: 1.5 $ $Date: 1999/12/28 16:41:01 $
 
 # -------------------------------------------------------------------------
 # Makefile generated from "Imake.tmpl" and </tmp/IIf.a07519>
@@ -47,7 +47,7 @@ include xtmake.env
 #
 # Motif Release 1.2.2
 #
-#   $RCSfile: GNUmakefile,v $ $Revision: 1.4 $ $Date: 1999/11/19 16:28:10 $
+#   $RCSfile: GNUmakefile,v $ $Revision: 1.5 $ $Date: 1999/12/28 16:41:01 $
 # platform:  $XConsortium: sun.cf,v 1.72.1.1 92/03/18 13:13:37 rws Exp $
 
 # operating system:  SunOS 4.1.3
@@ -279,6 +279,7 @@ clean::
 	rm -f Utilities/$(OBJDIR)/*.o
 	rm -f Windows/$(OBJDIR)/*.o
 	rm -f XWidgets/$(OBJDIR)/*.o
+	rm -f $(WXLIBDIR)/lib$(LIBNAME).a
 
 #------------------------------------------------------------------------------
 # dependencies
