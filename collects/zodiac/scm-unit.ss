@@ -1,4 +1,4 @@
-; $Id: scm-unit.ss,v 1.72 1998/12/17 03:30:28 mflatt Exp $
+; $Id: scm-unit.ss,v 1.73 1999/01/28 17:08:28 mflatt Exp $
 
 (unit/sig zodiac:scheme-units^
   (import zodiac:misc^ (z : zodiac:structures^)
@@ -321,7 +321,10 @@
 					    "Can't find box in get-unresolved-vars"))))])
 			(set-top-level-varref/bind-slot!
 			 (unresolved-varref u)
-			 box)))
+			 box)
+			(set-top-level-varref/bind/unit-unit?!
+			 (unresolved-varref u)
+			 #t)))
 		    (loop (cdr remaining) unr))
 		  ((import-id? entry)
 		    (loop (cdr remaining) unr))
