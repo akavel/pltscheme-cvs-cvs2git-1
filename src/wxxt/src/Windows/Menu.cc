@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Menu.cc,v 1.3 1998/04/22 14:38:47 mflatt Exp $
+ * $Id: Menu.cc,v 1.4 1998/04/22 15:36:34 mflatt Exp $
  *
  * Purpose: simple menu class
  *
@@ -266,6 +266,9 @@ int wxMenu::Number()
 
   for (found = (menu_item*)top; found; found = found->next)
     n++;
+
+  if (n && topdummy)
+    --n;
 
   return n;
 }

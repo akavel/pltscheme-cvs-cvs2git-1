@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: MenuBar.cc,v 1.3 1998/04/22 14:38:47 mflatt Exp $
+ * $Id: MenuBar.cc,v 1.4 1998/04/22 15:36:34 mflatt Exp $
  *
  * Purpose: menu bar class
  *
@@ -200,6 +200,11 @@ Bool wxMenuBar::Delete(wxMenu *menu, int pos)
       last = (wxMenuItem *)prev;
     if (prev)
       prev->next = i->next;
+
+    if (!top) {
+      Append(NULL, NULL); // to have something if associated to frame
+      topdummy = top;
+    }
 
     if (i->contents) {
       delete i->label;
