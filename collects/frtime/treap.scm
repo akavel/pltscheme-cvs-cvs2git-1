@@ -237,7 +237,7 @@
 ; replacing a node with a join of its two kids; compare this explanation
 ; to the one given in the DDJ paper!
 ;
-; $Id: treap.scm,v 1.2 2004/05/19 21:12:09 robby Exp $
+; $Id: treap.scm,v 1.3 2004/05/19 21:58:38 eli Exp $
 
 ;(declare				; Compilation optimization options
 ; (block)
