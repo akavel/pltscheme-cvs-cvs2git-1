@@ -1,4 +1,4 @@
-; $Id: invoke.ss,v 1.25 1997/08/11 20:28:21 shriram Exp $
+; $Id: invoke.ss,v 1.26 1997/08/13 15:40:35 shriram Exp $
 
 (reference-library "coreu.ss")
 (reference-library "match.ss")
@@ -35,7 +35,7 @@
     (define unmatched-cond/case-is-error? plt:unmatched-cond/case-is-error?)
     (define allow-set!-on-undefined? plt:allow-set!-on-undefined?)
     (define allow-improper-lists? plt:allow-improper-lists?)
-    (define check-syntax-level 'structured)))
+    (define check-syntax-level 'core)))
 ; plt:check-syntax-level)))
 
 ; (define language-levels '(core structured side-effecting advanced))
