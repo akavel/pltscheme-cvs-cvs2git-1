@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Date+Time.cc,v 1.2 1998/11/09 17:25:08 mflatt Exp $
+ * $Id: Date+Time.cc,v 1.3 1999/11/24 21:20:20 mflatt Exp $
  *
  * Purpose: time and date related functions
  *
@@ -33,8 +33,10 @@
 
 char *wxNow(void)
 {
-    time_t now = time(NULL);
-    char *date = ctime(&now); 
+    time_t now;
+    char *date;
+    now = time(NULL);
+    date = ctime(&now); 
     date[24] = '\0';
     return date;
 }
