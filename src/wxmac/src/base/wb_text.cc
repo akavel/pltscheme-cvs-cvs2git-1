@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_text.cc,v 1.1.1.1 1998/01/13 17:54:58 mflatt Exp $
+ * RCS_ID:      $Id: wb_text.cc,v 1.2 1998/06/02 20:51:42 robby Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -33,8 +33,6 @@
 #include "wx.h"
 
 #ifdef wx_mac
-#include <iostream.h>
-#include <fstream.h>
 #include <stdio.h>
 #endif
 

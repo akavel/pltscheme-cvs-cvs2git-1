@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_frame.cc,v 1.1.1.1 1998/01/13 17:54:58 mflatt Exp $
+ * RCS_ID:      $Id: wb_frame.cc,v 1.2 1998/06/02 20:51:41 robby Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -39,7 +39,7 @@
  
 #include "wx_stdev.h"
 
-#include <iostream.h>
+// #include <iostream.h>
 
 #ifndef wx_mac
 wxbFrame::wxbFrame(void)
