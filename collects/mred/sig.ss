@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.74 1997/10/09 21:42:24 robby Exp $
+;; $Id: sig.ss,v 1.75 1997/10/09 22:05:00 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -191,6 +191,8 @@
    welcome-message
    console-max-save-previous-exprs
    
+   show-interactions-history
+
    make-scheme-mode-edit%
    scheme-mode-edit%
    
