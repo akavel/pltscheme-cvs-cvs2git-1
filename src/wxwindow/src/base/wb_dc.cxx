@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_dc.cxx,v 1.1.1.1 1997/12/22 16:11:54 mflatt Exp $
+ * RCS_ID:      $Id: wb_dc.cxx,v 1.2 1998/07/03 21:51:29 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -109,6 +109,11 @@ void wxbDC::SetTextBackground(wxColour *colour)
 void wxbDC::SetBackgroundMode(int mode)
 {
   current_bk_mode = mode;
+}
+
+int wxbDC::GetBackgroundMode(void)
+{
+  return current_bk_mode;
 }
 
 void wxbDC::GetSize(float *width, float *height)
