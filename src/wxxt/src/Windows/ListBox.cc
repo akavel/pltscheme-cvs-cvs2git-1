@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: ListBox.cc,v 1.3 1998/02/05 23:00:32 mflatt Exp $
+ * $Id: ListBox.cc,v 1.4 1998/02/27 02:41:35 mflatt Exp $
  *
  * Purpose: list box panel item
  *
@@ -98,6 +98,7 @@ Bool wxListBox::Create(wxPanel *panel, wxFunction func, char *title,
 	 XtNhideHScrollbar, TRUE,
 	 XtNbackground, bg->GetPixel(cmap), /* MATTHEW */
 	 XtNdoScroll, FALSE,
+	 XtNhighlightThickness, 2,
 	 NULL);
     // create multi list
     X->handle = XtVaCreateManagedWidget
