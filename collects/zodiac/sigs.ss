@@ -1,4 +1,4 @@
-; $Id: sigs.ss,v 1.70 1999/10/21 04:51:36 shriram Exp $
+; $Id: sigs.ss,v 1.71 2000/01/02 23:28:26 robby Exp $
 
 (begin-elaboration-time (require-library "macro.ss"))
 (begin-elaboration-time (require-library "prettys.ss"))
@@ -123,7 +123,7 @@
     (struct case-lambda-form (args bodies))         create-case-lambda-form
     (struct with-continuation-mark-form (key val body)) create-with-continuation-mark-form
     generate-struct-names
-    ))
+    expands<%>))
 
 (define-signature zodiac:scheme-objects^
   (create-class*/names-form

@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.198 1999/12/16 17:52:35 shriram Exp $
+; $Id: scm-main.ss,v 1.199 2000/01/02 23:28:25 robby Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -30,9 +30,17 @@
 	(zodiac-start s) (zodiac-finish s)
 	(make-empty-back-box) c)))
 
-  (add-lit-micro common-vocabulary
-    (lambda (expr env attributes vocab)
-      (create-const expr expr)))
+  (define expands<%> (interface () expand))
+
+  (add-lit-micro
+   common-vocabulary
+   (lambda (expr env attributes vocab)
+     (if (z:external? expr)
+	 (let ([obj (z:read-object expr)])
+	   (if (is-a? obj expands<%>)
+	       (expand-expr (send obj expand expr) env attributes vocab)
+	       (create-const expr expr)))
+	 (create-const expr expr))))
 
   ; ----------------------------------------------------------------------
 
