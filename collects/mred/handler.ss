@@ -16,7 +16,7 @@
 	    
     (mred:debug:printf 'invoke "mred:handler@")
 
-    (define-struct handler (name extension handler complex))
+    (define-struct handler (name extension handler))
 
     (define format-handlers '())
     (define mode-handlers '())
@@ -44,8 +44,7 @@
 	    (error who "handler was not a function")]
 	   [else (make-handler name
 			       extension
-			       handler
-			       (eval '(make-rectangular 10 1)))]))))
+			       handler)]))))
     
     (define insert-format-handler
       (lambda args
