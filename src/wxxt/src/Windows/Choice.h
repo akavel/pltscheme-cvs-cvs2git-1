@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Choice.h,v 1.3 1998/10/10 15:27:57 mflatt Exp $
+ * $Id: Choice.h,v 1.4 1998/11/12 18:14:45 mflatt Exp $
  *
  * Purpose: choice panel item
  *
@@ -67,6 +67,8 @@ public:
     void  SetColoumns(int WXUNUSED(n=1)) {};
 
     void Command(wxCommandEvent &event);
+
+    void OnEvent(wxMouseEvent&);
 
 private:
 #   ifdef Have_Xt_Types
