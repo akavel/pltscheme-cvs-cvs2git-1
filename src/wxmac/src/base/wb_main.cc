@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_main.cc,v 1.2 1998/08/14 13:56:02 robby Exp $
+ * RCS_ID:      $Id: wb_main.cc,v 1.3 1998/09/18 23:32:51 robby Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -98,7 +98,6 @@ void wxCommonCleanUp(void)
   delete wxTheBitmapList;
 #ifdef wx_mac
   delete wxTheCursorList;
-  delete wxTheIconList;
 #endif
   delete wxThePrintPaperDatabase;
 
