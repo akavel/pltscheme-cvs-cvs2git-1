@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: WindowDC.h,v 1.8 1999/04/23 19:00:31 mflatt Exp $
+ * $Id: WindowDC.h,v 1.9 1999/11/04 17:25:33 mflatt Exp $
  *
  * Purpose: device context to draw drawables
  *          (windows and pixmaps, even if pixmaps are covered by wxMemoryDC)
@@ -93,7 +93,6 @@ class wxWindowDC_Xintern;
 #endif
 
 class wxWindowDC : public wxDC {
-DECLARE_DYNAMIC_CLASS(wxWindowDC)
 public:
     wxWindowDC(void);
     ~wxWindowDC(void);

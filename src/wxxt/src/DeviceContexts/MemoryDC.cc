@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: MemoryDC.cc,v 1.3 1998/10/18 12:04:09 mflatt Exp $
+ * $Id: MemoryDC.cc,v 1.4 1999/11/04 17:25:33 mflatt Exp $
  *
  * Purpose: device context to draw into wxBitmaps
  *
@@ -31,8 +31,6 @@
 #define  Uses_wxBitmap
 #define  Uses_wxMemoryDC
 #include "wx.h"
-
-IMPLEMENT_DYNAMIC_CLASS(wxMemoryDC, wxCanvasDC)
 
 wxMemoryDC::wxMemoryDC(Bool ro) : wxCanvasDC()
 {

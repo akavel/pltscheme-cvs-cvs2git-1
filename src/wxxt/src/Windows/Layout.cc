@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Layout.cc,v 1.1.1.1 1997/12/22 17:28:58 mflatt Exp $
+ * $Id: Layout.cc,v 1.2 1999/11/04 17:25:38 mflatt Exp $
  *
  * Purpose: layout classes
  *
@@ -37,8 +37,6 @@
 //-----------------------------------------------------------------------------
 // wxLayoutConstraint
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxLayoutConstraints, wxObject)
 
 wxLayoutConstraints::wxLayoutConstraints(void)
 : wxObject(FALSE)
@@ -94,8 +92,6 @@ void wxLayoutConstraints::UnDone(void)
 //-----------------------------------------------------------------------------
 // wxIndividualLayoutConstraint
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxIndividualLayoutConstraint, wxObject)
 
 wxIndividualLayoutConstraint::wxIndividualLayoutConstraint(void)
 {

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: CheckBox.cc,v 1.4 1998/12/05 01:08:21 mflatt Exp $
+ * $Id: CheckBox.cc,v 1.5 1999/11/04 17:25:37 mflatt Exp $
  *
  * Purpose: check box panel item
  *
@@ -37,8 +37,6 @@
 //-----------------------------------------------------------------------------
 // create and destroy button
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxCheckBox, wxItem)
 
 wxCheckBox::wxCheckBox(void) : wxItem()
 {

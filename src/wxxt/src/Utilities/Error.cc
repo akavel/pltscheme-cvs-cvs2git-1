@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Error.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: Error.cc,v 1.2 1999/11/04 17:25:36 mflatt Exp $
  *
  * Purpose: error routines
  *
@@ -27,7 +27,7 @@
 
 #include <stdarg.h>
 
-void wxDebugMsg(const char *fmt, ...)
+void wxDebugMsg(const char *WXUNUSED(fmt), ...)
 {
 #if 0
     if (!wxAPP_DEBUGOUTPUT)

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Slider.cc,v 1.7 1998/12/05 01:08:21 mflatt Exp $
+ * $Id: Slider.cc,v 1.8 1999/11/04 17:25:39 mflatt Exp $
  *
  * Purpose: slider panel item
  *
@@ -37,8 +37,6 @@
 //-----------------------------------------------------------------------------
 // create and destroy button
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxSlider, wxItem)
 
 wxSlider::wxSlider(void) : wxItem()
 {

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Timer.h,v 1.1.1.1 1997/12/22 17:28:54 mflatt Exp $
+ * $Id: Timer.h,v 1.2 1999/11/04 17:25:35 mflatt Exp $
  *
  * Purpose: class to process time outs
  *
@@ -40,17 +40,11 @@ public:
     void  Stop(void);
     // called on timeout
     virtual void Notify(void) {}
-#if 0
-private:
-#endif
 #   ifdef Have_Xt_Types
     static void EventCallback(wxTimer *, XtIntervalId *);
 #   endif
 
     int           interval;
-#if 0
-    unsigned long id;
-#endif
     Bool          one_shot;
 
     /* MrEd stuff: */

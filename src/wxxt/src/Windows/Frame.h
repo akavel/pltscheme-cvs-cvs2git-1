@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Frame.h,v 1.7 1999/07/08 16:10:42 mflatt Exp $
+ * $Id: Frame.h,v 1.8 1999/11/04 17:25:37 mflatt Exp $
  *
  * Purpose: base class for all frames
  *
@@ -36,7 +36,6 @@ class wxMessage;
 class wxToolBar;
 
 class wxFrame : public wxPanel {
-DECLARE_DYNAMIC_CLASS(wxFrame)
 public:
     wxFrame(void);
     wxFrame(wxFrame *parent, char *title, int x=-1, int y=-1,

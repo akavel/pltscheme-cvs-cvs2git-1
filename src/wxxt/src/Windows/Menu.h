@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Menu.h,v 1.5 1999/03/28 20:38:16 mflatt Exp $
+ * $Id: Menu.h,v 1.6 1999/11/04 17:25:38 mflatt Exp $
  *
  * Purpose: simple menu class
  *
@@ -49,7 +49,6 @@ typedef void (*wxFunction)(wxObject&, wxCommandEvent&);
 typedef void *wxMenuItem;
 
 class wxMenu : public wxObject {
-DECLARE_DYNAMIC_CLASS(wxMenu)
 public:
     wxMenu(char *title=NULL, wxFunction func=NULL);
     ~wxMenu(void);

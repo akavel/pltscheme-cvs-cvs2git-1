@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Slider.h,v 1.4 1998/09/06 01:54:03 mflatt Exp $
+ * $Id: Slider.h,v 1.5 1999/11/04 17:25:39 mflatt Exp $
  *
  * Purpose: slider panel item
  *
@@ -33,7 +33,6 @@
 class wxPanel;
 
 class wxSlider : public wxItem {
-DECLARE_DYNAMIC_CLASS(wxSlider)
 public:
     wxSlider(void);
     wxSlider(wxPanel *panel, wxFunction func, char *label,

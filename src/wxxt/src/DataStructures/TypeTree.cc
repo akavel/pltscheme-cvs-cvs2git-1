@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: TypeTree.cc,v 1.2 1998/08/14 21:44:37 mflatt Exp $
+ * $Id: TypeTree.cc,v 1.3 1999/11/04 17:25:32 mflatt Exp $
  *
  * Purpose: type tree
  *
@@ -104,16 +104,8 @@ void wxInitStandardTypes(void)
 }
 
 //-----------------------------------------------------------------------------
-// wxTypeDef implementation
-//-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxTypeDef, wxObject)
-
-//-----------------------------------------------------------------------------
 // wxTypeTree implementation
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxTypeTree, wxHashTable)
 
 wxTypeTree::wxTypeTree(void) : wxHashTable(wxKEY_INTEGER)
 {

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Window.h,v 1.8 1999/08/28 16:14:51 mflatt Exp $
+ * $Id: Window.h,v 1.9 1999/11/04 17:25:39 mflatt Exp $
  *
  * Purpose: base class for all windows
  *
@@ -60,7 +60,6 @@ class wxMouseEvent;
 class wxPanel;
 
 class wxWindow : public wxEvtHandler {
-DECLARE_DYNAMIC_CLASS(wxWindow)
 public:
     wxWindow(void);
     ~wxWindow(void);

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Layout.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: Layout.h,v 1.2 1999/11/04 17:25:38 mflatt Exp $
  *
  * Purpose: layout classes
  *
@@ -34,7 +34,6 @@ class wxWindow;
 class wxLayoutConstraints;
 
 class wxIndividualLayoutConstraint : public wxObject {
-DECLARE_DYNAMIC_CLASS(wxIndividualLayoutConstraint)
 public:
     wxIndividualLayoutConstraint(void);
 
@@ -86,7 +85,6 @@ private:
 };
 
 class wxLayoutConstraints : public wxObject {
-DECLARE_DYNAMIC_CLASS(wxLayoutConstraints)
 public:
     wxLayoutConstraints(void);
 

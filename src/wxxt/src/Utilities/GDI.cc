@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: GDI.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: GDI.cc,v 1.2 1999/11/04 17:25:36 mflatt Exp $
  *
  * Purpose: common GDI routines
  *
@@ -46,8 +46,3 @@ void wxDisplaySize(int *width, int *height)
       *height = 768;
   }
 }
-
-void wxSetCursor(wxCursor* WXUNUSED(cursor))
-{
-}
-

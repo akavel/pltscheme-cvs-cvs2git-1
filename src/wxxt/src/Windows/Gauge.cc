@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Gauge.cc,v 1.6 1998/09/17 03:30:41 mflatt Exp $
+ * $Id: Gauge.cc,v 1.7 1999/11/04 17:25:37 mflatt Exp $
  *
  * Purpose: gauge panel item
  *
@@ -37,8 +37,6 @@
 //-----------------------------------------------------------------------------
 // create and destroy gauge
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxGauge, wxItem)
 
 wxGauge::wxGauge(void) : wxItem()
 {

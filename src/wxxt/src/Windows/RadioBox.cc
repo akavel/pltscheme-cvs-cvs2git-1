@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: RadioBox.cc,v 1.9 1999/08/09 14:51:30 mflatt Exp $
+ * $Id: RadioBox.cc,v 1.10 1999/11/04 17:25:38 mflatt Exp $
  *
  * Purpose: radio box panel item
  *
@@ -41,8 +41,6 @@
 //-----------------------------------------------------------------------------
 // create and destroy button
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxRadioBox, wxItem)
 
 wxRadioBox::wxRadioBox(void) : wxItem()
 {

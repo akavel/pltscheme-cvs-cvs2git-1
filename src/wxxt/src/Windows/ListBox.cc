@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: ListBox.cc,v 1.15 1999/10/22 14:41:55 mflatt Exp $
+ * $Id: ListBox.cc,v 1.16 1999/11/04 17:25:38 mflatt Exp $
  *
  * Purpose: list box panel item
  *
@@ -48,8 +48,6 @@ char *wxchoice_unprotect_amp(char *s);
 //-----------------------------------------------------------------------------
 // create and destroy wxListBox
 //-----------------------------------------------------------------------------
-
-IMPLEMENT_DYNAMIC_CLASS(wxListBox, wxItem)
 
 wxListBox::wxListBox(void) : wxItem()
 {

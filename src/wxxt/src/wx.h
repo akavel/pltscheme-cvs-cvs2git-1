@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: wx.h,v 1.2 1998/09/23 00:11:53 mflatt Exp $
+ * $Id: wx.h,v 1.3 1999/11/04 17:25:31 mflatt Exp $
  *
  * Purpose: wxWindows Xt-port main include file
  *
@@ -48,7 +48,6 @@
 // standard include files needed in addition to wx include files
 #include <stdio.h>
 #include <stdlib.h>
-#include <fstream.h>
 
 // standard wx include files
 #include <wxSetup.h>

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Message.h,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: Message.h,v 1.2 1999/11/04 17:25:38 mflatt Exp $
  *
  * Purpose: message panel item
  *
@@ -34,7 +34,6 @@ class wxBitmap;
 class wxPanel;
 
 class wxMessage: public wxItem {
-DECLARE_DYNAMIC_CLASS(wxMessage)
 public:
     wxMessage(void);
     ~wxMessage(void);
