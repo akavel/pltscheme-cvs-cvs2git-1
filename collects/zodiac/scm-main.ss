@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.180 1999/03/24 00:09:21 mflatt Exp $
+; $Id: scm-main.ss,v 1.181 1999/04/07 22:38:03 mflatt Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -940,6 +940,8 @@
        (z:symbol-marks s)))
     
   (define (make-let-macro begin? named?)
+      ;; >> Broken by current embedded define hacks! <<
+      ;; e.g., (let ([a 7]) (let-macro a void (a))
       (let* ((kwd '())
 	     
 	     (in-pattern-1 `(_ fun ((v e) ...) ,@(get-expr-pattern begin?)))
