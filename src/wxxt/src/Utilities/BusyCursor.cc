@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: BusyCursor.cc,v 1.9 1999/11/25 22:57:29 mflatt Exp $
+ * $Id: BusyCursor.cc,v 1.10 1999/12/05 18:11:28 mflatt Exp $
  *
  * Purpose: busy cursor
  *
@@ -57,6 +57,11 @@ void wxXSetNoCursor(wxWindow *win, wxCursor *cursor)
     }
   }
   
+#ifdef MZ_PRECISE_GC
+  if (win->__type == wxTYPE_MENU_BAR)
+    return;
+#endif
+
   cl = win->GetChildren();
   for (node = cl->First(); node; node = node->Next()) {
     wxWindow *child;
