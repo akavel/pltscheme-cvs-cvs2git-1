@@ -4,13 +4,8 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_dc.cc,v 1.10 2001/11/05 06:55:00 clements Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
-
-/* static const char sccsid[] = "@(#)wb_dc.cc      1.2 5/9/94"; */
-
-// #include "wx.h" // Uncomment this line for Borland precomp. headers to work
 
 #ifdef __GNUG__
 #ifdef __GNUG__
