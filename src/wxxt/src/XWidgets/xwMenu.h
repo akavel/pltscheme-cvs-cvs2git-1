@@ -1,4 +1,4 @@
-/* $Id: xwMenu.h,v 1.2 1998/04/22 14:38:48 mflatt Exp $ */
+/* $Id: xwMenu.h,v 1.3 1998/08/14 21:44:42 mflatt Exp $ */
 
 /***********************************************************
 Copyright 1995 by Markus Holzem
@@ -133,7 +133,7 @@ typedef struct _menu_item {
     char              *label;
     char              *key_binding;
     char              *help_text;
-    int               ID;
+    long              ID;
     menu_item_type    type;
     Boolean           enabled;
     Boolean           set;	  /* used for toggles and radios */
