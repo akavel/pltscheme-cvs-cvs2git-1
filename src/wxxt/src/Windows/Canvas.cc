@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Canvas.cc,v 1.3 1998/09/06 01:43:30 mflatt Exp $
+ * $Id: Canvas.cc,v 1.4 1998/09/20 21:48:49 mflatt Exp $
  *
  * Purpose: canvas panel item
  *
@@ -100,7 +100,7 @@ Bool wxCanvas::Create(wxPanel *panel, int x, int y, int width, int height,
 	 NULL);
     // Initialize CanvasDC
     CreateDC();
-    dc->SetBackground(wxWHITE_BRUSH); // white brush as default for canvas background
+    dc->SetBackground(wxWHITE); // white brush as default for canvas background
     // position in panel
     panel->PositionItem(this, x, y,
 			(width  > -1 ? width  : wxCANVAS_WIDTH),
