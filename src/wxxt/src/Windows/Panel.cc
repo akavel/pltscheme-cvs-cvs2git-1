@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Panel.cc,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: Panel.cc,v 1.2 1999/03/09 14:17:52 mflatt Exp $
  *
  * Purpose: base class for all panels
  *
@@ -35,6 +35,9 @@
 #define  Uses_BoardWidget
 #define  Uses_EnforcerWidget
 #include "widgets.h"
+
+#define REPORT_ZERO_WIDTH_FLAG 0x20
+#define REPORT_ZERO_HEIGHT_FLAG 0x40
 
 //-----------------------------------------------------------------------------
 // wxPanel create and destroy
@@ -159,6 +162,12 @@ void wxPanel::GetClientSize(int *width, int *height)
     XfwfCallComputeInside(X->handle, &xx, &yy, &ww, &hh);
     xoff = xx; yoff = yy;
     *width = ww; *height = hh;
+
+    
+    if (misc_flags & REPORT_ZERO_WIDTH_FLAG)
+      *width = 0;
+    if (misc_flags & REPORT_ZERO_HEIGHT_FLAG)
+      *height = 0;
 }
 
 void wxPanel::Fit(void)
