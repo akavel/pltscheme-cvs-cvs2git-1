@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: MenuBar.cc,v 1.4 1998/04/22 15:36:34 mflatt Exp $
+ * $Id: MenuBar.cc,v 1.5 1998/04/23 19:07:03 mflatt Exp $
  *
  * Purpose: menu bar class
  *
@@ -230,6 +230,9 @@ int wxMenuBar::Number()
 
   for (i = (menu_item *)top; i; i = i->next)
     counter++;
+
+  if (counter && topdummy)
+    --counter;
 
   return counter;
 }
