@@ -64,26 +64,25 @@
     ; Finding format & mode handlers
     (define find-handler
       (lambda (name handlers)
-	(call/ec
-          (lambda (exit)
-            (let ([extension (if (string? name)
-                               (mzlib:file:filename-extension name)
-                               #f)])
-              (if extension
-                (for-each
-                  (lambda (handler)
-                    (let ([ext (handler-extension handler)])
-                      (if (or (and (procedure? ext)
-                                (ext name ext))
-                            (and (string? ext)
-                              (string=? ext extension))
-                            (and (pair? ext)
-                              (ormap (lambda (ext) 
-                                       (string=? ext extension))
-                                ext)))
-                        (exit (handler-handler handler)))))
-                  handlers))
-              #f)))))
+	(let/ec exit
+	  (let ([extension (if (string? name)
+			       (or (mzlib:file:filename-extension name)
+				   "")
+			       "")])
+	    (for-each
+	     (lambda (handler)
+	       (let ([ext (handler-extension handler)])
+		 (when (or (and (procedure? ext)
+				(ext name))
+			   (and (string? ext)
+				(string=? ext extension))
+			   (and (pair? ext)
+				(ormap (lambda (ext) 
+					 (string=? ext extension))
+				       ext)))
+		   (exit (handler-handler handler)))))
+	     handlers)
+	    #f))))
     
     (define find-format-handler
       (lambda (name)
