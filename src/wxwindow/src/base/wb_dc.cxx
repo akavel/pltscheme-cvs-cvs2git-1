@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_dc.cxx,v 1.4 1998/11/17 21:40:35 mflatt Exp $
+ * RCS_ID:      $Id: wb_dc.cxx,v 1.5 1999/10/05 16:31:50 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -39,13 +39,7 @@
 
 #include <math.h>
 
-#if USE_SPLINES
-# if USE_XFIG_SPLINE_CODE
-#    include "../base/xfspline.cxx"
-# else
-#  include "../base/wxspline.cxx"
-# endif
-#endif // USE_SPLINES
+#include "../base/xfspline.cxx"
 
 // Default constructor
 wxbDC::wxbDC(void)
