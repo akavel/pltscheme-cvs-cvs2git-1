@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: MenuBar.h,v 1.3 1998/08/14 21:44:41 mflatt Exp $
+ * $Id: MenuBar.h,v 1.4 1999/03/28 20:38:16 mflatt Exp $
  *
  * Purpose: menu bar class
  *
@@ -64,6 +64,7 @@ public:
     void  SetLabelTop(int pos, char *label);
     // search for item by label
     int   FindMenuItem(char *menu, char *label);
+    void Stop();
 private:
     // search for internal data by id
     wxMenuItem  *FindItemForId(long id, wxMenu **menu=NULL);

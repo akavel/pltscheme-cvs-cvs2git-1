@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Menu.h,v 1.4 1998/11/17 13:11:50 mflatt Exp $
+ * $Id: Menu.h,v 1.5 1999/03/28 20:38:16 mflatt Exp $
  *
  * Purpose: simple menu class
  *
@@ -89,6 +89,8 @@ public:
     void  SetClientData(char *data) { client_data = data; }
     // search for item by label
     int   FindItem(char *label, int strip = 1);
+
+    void Stop(void);
 private:
     // allow callback and menubar access to private data
     friend class wxMenuBar;
