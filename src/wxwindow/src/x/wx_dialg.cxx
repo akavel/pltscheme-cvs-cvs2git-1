@@ -4,15 +4,18 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_dialg.cxx,v 1.4 1998/03/07 14:23:45 mflatt Exp $
+ * RCS_ID:      $Id: wx_dialg.cxx,v 1.5 1998/04/08 00:09:12 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
 // $Log: wx_dialg.cxx,v $
-// Revision 1.4  1998/03/07 14:23:45  mflatt
-// dialog transience
+// Revision 1.5  1998/04/08 00:09:12  mflatt
+// beginning of fixing pre-on-char
 //
-// Revision 1.4  1998-03-07 14:23:45  mflatt
+// Revision 1.5  1998-04-08 00:09:12  mflatt
+// beginning of fixing pre-on-char
+//
+// Revision 1.4  1998/03/07 14:23:45  mflatt
 // dialog transience
 //
 // Revision 1.3  1998/03/07 00:37:48  mflatt
@@ -385,6 +388,8 @@ Bool wxDialogBox::Create(wxWindow *Parent, char *Title, Bool Modal,
   XtVaGetValues(panelWidget, XmNbackground, &thePix, NULL);
   panelBackgroundBrush->colour.pixel = thePix;
   GetPanelDC()->SetBackground(panelBackgroundBrush);
+
+  AddPreHandlers(panelWidget, dialogShell);
 
   modal = Modal;
   return TRUE;

@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_frame.cxx,v 1.5 1998/03/07 14:23:46 mflatt Exp $
+ * RCS_ID:      $Id: wx_frame.cxx,v 1.6 1998/04/08 00:09:12 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -337,6 +337,8 @@ Bool wxFrame::Create(wxFrame *Parent, char *title, int x, int y,
   sr_width = width;
   sr_height = height;
   GetEventHandler()->OnSize(width, height);
+
+  AddPreHandlers(workArea);
 
   return TRUE;
 }

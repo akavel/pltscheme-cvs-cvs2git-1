@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_frame.cxx,v 1.1.1.1 1997/12/22 16:11:57 mflatt Exp $
+ * RCS_ID:      $Id: wb_frame.cxx,v 1.2 1998/04/08 00:09:08 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -124,7 +124,7 @@ void wxbFrame::OnSize(int WXUNUSED(x), int WXUNUSED(y))
 
 // Default activation behaviour - set the focus for the first child
 // subwindow found.
-void wxbFrame::OnActivate(Bool flag)
+void wxbFrame::OnActivate(Bool WXUNUSED(flag))
 {
 #if 0
 #ifndef wx_msw
