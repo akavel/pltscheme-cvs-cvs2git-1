@@ -1,11 +1,11 @@
 ;;
-;; $Id: stsigs.ss,v 1.2 1997/07/06 20:22:16 krentel Exp $
+;; $Id: stsigs.ss,v 1.3 1997/07/07 15:14:26 krentel Exp $
 ;;
 ;; Signatures for gui tester.
 ;;
 
 (define-signature mred:test:active-frame^
-  (get-active-frame
+  (test:get-active-frame
    testable-frame%
    testable-dialog-box%))
 
@@ -31,8 +31,7 @@
    get-repl-canvas))
 
 (define-signature mred:self-test^
-  ((open mred:test:active-frame^)
-   (open mred:test:struct^)
+  ((open mred:test:struct^)
    (open mred:test:run^)
    (open mred:test:primitives^)
    (open mred:test:drscheme^)))
