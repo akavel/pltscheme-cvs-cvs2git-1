@@ -1,4 +1,4 @@
-; $Id: invoke.ss,v 1.32 1998/04/21 02:59:55 robby Exp $
+; $Id: invoke.ss,v 1.33 1998/05/09 17:14:40 shriram Exp $
 
 (require-library "coreu.ss")
 (require-library "match.ss")
@@ -20,9 +20,7 @@
     (define internal-error
       (default-error-handler 'internal-error))
     (define static-error
-      (default-error-handler 'syntax-error))
-    (define dynamic-error
-      (default-error-handler 'run-time-error))))
+      (default-error-handler 'syntax-error))))
 
 (define plt:mzscheme-parameters@
   (require-library-unit/sig "sparamr.ss" "backward"))
