@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.73 1997/09/11 16:00:52 robby Exp $
+;; $Id: sig.ss,v 1.74 1997/10/09 21:42:24 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -8,6 +8,12 @@
      `(define-signature mred:wx^ ())))
 
 (reference-library "dates.ss")
+
+(define-signature mred:graph^
+  (node-snip%
+   make-node-snip%
+   graph-pasteboard%
+   make-graph-pasteboard%))
 
 (define-signature mred:connections^
   (connections-frame%
@@ -432,6 +438,7 @@
    (open mred:hyper-edit^) (open mred:hyper-dialog^) (open mred:hyper-frame^)
    (open mred:testable-window^)
    (unit test : mred:self-test-export^)
-   (open mred:url^)))
+   (open mred:url^)
+   (open mred:graph^)))
 
 (define-signature mred:application-imports^ (argv))

@@ -1,5 +1,5 @@
 ;;
-;; $Id: contkids.ss,v 1.42 1997/09/17 13:47:14 mflatt Exp $
+;; $Id: contkids.ss,v 1.43 1997/10/09 21:42:24 robby Exp $
 ;;
 
 ; need to export:
@@ -732,7 +732,7 @@
 		  (set! bitmap (cdr new-label))]
 		 [else 
 		  (error 'canvas-message% 
-			 "expected the label to be a string or a wx:bitmap%")]))])
+			 "expected the label to be a string, a wx:bitmap% object, or a cons-pair of a memory-dc% object and a wx:bitmap% object")]))])
 	  (inherit get-dc)
 	  (public
 	    [default-x-stretch #f]
