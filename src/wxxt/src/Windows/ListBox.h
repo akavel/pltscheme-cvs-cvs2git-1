@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: ListBox.h,v 1.7 1999/11/18 16:35:07 mflatt Exp $
  *
  * Purpose: list box panel item
  *
@@ -31,7 +30,6 @@
 #endif
 
 class wxPanel;
-class wxStringList;
 
 class wxListBox : public wxItem {
 public:
@@ -69,7 +67,6 @@ public:
     int   Number(void);
     Bool  Selected(int n);
     void  Set(int n, char *choices[]);
-    void  Set(wxStringList *slist);
     void  SetClientData(int n, char *client_data);
     void  SetFirstItem(int n);
     void  SetFirstItem(char *s);
@@ -80,7 +77,13 @@ public:
     int   NumberOfVisibleItems();
     void  Command(wxCommandEvent *event);
     void  OnChar(wxKeyEvent *e);
+
+    void OnScroll(wxScrollEvent* event);
+    void OnSize(int width, int height);
+
 private:
+    void OnListSize(int width, int height);
+
 #   ifdef Have_Xt_Types
     static void EventCallback(Widget w, XtPointer, XtPointer);
 #   endif
