@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Bitmap.cc,v 1.1.1.1 1997/12/22 17:28:50 mflatt Exp $
+ * $Id: Bitmap.cc,v 1.2 1997/12/27 19:51:59 mflatt Exp $
  *
  * Purpose: bitmap classes to implement pixmaps, icons, and cursors
  *
@@ -33,7 +33,7 @@
 #include "wx.h"
 
 #if USE_XPM
-#	include XPM_INCLUDE
+#	include "../../contrib/xpm/lib/xpm.h"
 #endif
 #if USE_IMAGE_LOADING_IN_X
 #define WXI_SKIP_WX_INCLUDES
