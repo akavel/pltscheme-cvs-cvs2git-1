@@ -1,5 +1,5 @@
 ;;
-;; $Id: stsigs.ss,v 1.3 1997/07/07 15:14:26 krentel Exp $
+;; $Id: stsigs.ss,v 1.4 1997/07/07 19:25:58 krentel Exp $
 ;;
 ;; Signatures for gui tester.
 ;;
@@ -34,6 +34,6 @@
   ((open mred:test:struct^)
    (open mred:test:run^)
    (open mred:test:primitives^)
-   (open mred:test:drscheme^)))
+   (unit drs : mred:test:drscheme^)))
 
 (define-signature mred:self-test-export^ mred:self-test^)

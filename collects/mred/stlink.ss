@@ -1,5 +1,5 @@
 ;;
-;; $Id: stlink.ss,v 1.3 1997/07/07 15:14:20 krentel Exp $
+;; $Id: stlink.ss,v 1.4 1997/07/07 19:25:32 krentel Exp $
 ;;
 ;; Link the gui tester together into compound unit.
 ;;
@@ -32,6 +32,6 @@
     (open struct)
     (open run)
     (open prim)
-    (open drscheme))
-  
+    (unit drscheme drs))
+
   )
