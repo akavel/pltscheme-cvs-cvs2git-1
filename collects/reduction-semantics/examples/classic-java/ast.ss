@@ -1,9 +1,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;
 ;; ast.ss
-;; $Id: ast.ss,v 1.5 2004/08/19 21:23:49 cobbe Exp $
+;; $Id: ast.ss,v 1.6 2004/08/24 13:49:15 cobbe Exp $
 ;;
-;; Defines the AST types used for the Acquired Java system.
+;; Defines the AST types used for the ClassicJava system.
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
