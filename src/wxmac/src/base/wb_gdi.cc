@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:     August 1994
- * RCS_ID:      $Id: wb_gdi.cc,v 1.4 1998/02/15 19:24:34 mflatt Exp $
+ * RCS_ID:      $Id: wb_gdi.cc,v 1.5 1998/04/16 14:34:55 robby Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -556,6 +556,7 @@ wxInitializeStockObjects (void)
   wxSTANDARD_CURSOR = new wxCursor (wxCURSOR_ARROW);
   wxHOURGLASS_CURSOR = new wxCursor (wxCURSOR_WAIT);
   wxCROSS_CURSOR = new wxCursor (wxCURSOR_CROSS);
+  wxIBEAM_CURSOR = new wxCursor (wxCURSOR_IBEAM);
 }
 
 void 

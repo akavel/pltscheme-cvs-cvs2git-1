@@ -1,7 +1,7 @@
 /*
  * Global Data
  *
- * RCS_ID:      $Id: wb_data.cc,v 1.2 1998/01/14 03:04:09 mflatt Exp $
+ * RCS_ID:      $Id: wb_data.cc,v 1.3 1998/04/16 14:34:55 robby Exp $
  */
 
 /* static const char sccsid[] = "@(#)wb_data.cc	1.2 5/9/94"; */
@@ -97,6 +97,7 @@ wxColour *wxLIGHT_GREY;
 wxCursor *wxSTANDARD_CURSOR = NULL;
 wxCursor *wxHOURGLASS_CURSOR = NULL;
 wxCursor *wxCROSS_CURSOR = NULL;
+wxCursor *wxIBEAM_CURSOR = NULL;
 
 /*
  * Edward, haven't added in your wx_version and wx_version_string constants:
