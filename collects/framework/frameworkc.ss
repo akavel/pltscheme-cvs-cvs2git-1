@@ -1,5 +1,5 @@
 ;;
-;; $Id: frameworkc.ss,v 1.17 2000/01/17 15:13:18 robby Exp $
+;; $Id: frameworkc.ss,v 1.18 2000/01/25 22:23:02 robby Exp $
 ;;
 
 (compound-unit/sig (import [core:string : mzlib:string^]
@@ -74,7 +74,8 @@
 		mred
 		group preferences icon handler application panel
 		gui-utils exit finder keymap text pasteboard editor canvas
-		core:function)]
+		core:function
+		core:file)]
 	[scheme : framework:scheme^ 
 		((require-relative-library "scheme.ss")
 		 mred preferences match-cache paren
