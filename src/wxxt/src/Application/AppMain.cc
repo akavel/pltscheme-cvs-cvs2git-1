@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: AppMain.cc,v 1.16 1999/12/08 19:44:21 mflatt Exp $
  *
  * Purpose: wxWindows application and main loop
  *

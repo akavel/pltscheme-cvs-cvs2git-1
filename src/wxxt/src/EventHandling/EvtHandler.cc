@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: EvtHandler.cc,v 1.9 1999/12/08 19:44:22 mflatt Exp $
  *
  * Purpose: base event handler of windows etc.
  *
