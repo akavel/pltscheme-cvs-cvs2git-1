@@ -1,4 +1,4 @@
-; $Id: scm-spdy.ss,v 1.42 1999/01/16 15:47:07 mflatt Exp $
+; $Id: scm-spdy.ss,v 1.43 1999/03/15 14:35:40 mflatt Exp $
 
 (unit/sig zodiac:scheme-mrspidey^
   (import zodiac:misc^ (z : zodiac:structures^)
@@ -71,7 +71,7 @@
   ; --------------------------------------------------------------------
 
   (define mrspidey-vocabulary
-    (create-vocabulary 'mrspidey-vocabulary advanced-vocabulary))
+    (create-vocabulary 'mrspidey-vocabulary full-vocabulary))
 
   ; --------------------------------------------------------------------
 
