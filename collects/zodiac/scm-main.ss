@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.215 2000/06/10 13:10:27 mflatt Exp $
+; $Id: scm-main.ss,v 1.216 2000/06/15 03:39:48 shriram Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -1216,7 +1216,7 @@
 	    "time" 'kwd:time
 	    expr "malformed expression")))))
   
-  (add-primitivized-macro-form 'time intermediate-vocabulary
+  (add-primitivized-macro-form 'time advanced-vocabulary
     (make-time-macro #f))
   (add-primitivized-macro-form 'time scheme-vocabulary
     (make-time-macro #t))
