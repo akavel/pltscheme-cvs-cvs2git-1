@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Menu.h,v 1.6 1999/11/04 17:25:38 mflatt Exp $
+ * $Id: Menu.h,v 1.7 1999/11/18 16:35:07 mflatt Exp $
  *
  * Purpose: simple menu class
  *
@@ -44,7 +44,7 @@ class wxCommandEvent;
 class wxColour;
 class wxFont;
 
-typedef void (*wxFunction)(wxObject&, wxCommandEvent&);
+typedef void (*wxFunction)(wxObject*, wxCommandEvent*);
 
 typedef void *wxMenuItem;
 
