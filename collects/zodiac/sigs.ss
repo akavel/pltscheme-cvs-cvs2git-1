@@ -1,20 +1,20 @@
-; $Id: sigs.ss,v 1.42 1997/09/18 18:00:08 shriram Exp $
+; $Id: sigs.ss,v 1.43 1997/09/19 17:08:31 shriram Exp $
 
 (reference "namedarg.ss")
 
   (define-argument-list zodiac:scheme-expand/nal
     (kwd expression: expr)
     (opt (kwd elaboration-evaluator: elaboration-eval)
-      (lambda (expr sexp->raw phase)
-	(eval (sexp->raw expr))))
+      (lambda (expr parsed->raw phase)
+	(eval (parsed->raw expr))))
     (opt (kwd attributes: attr) 'previous)
     (opt (kwd vocabulary: vocab) #f))
 
   (define-argument-list zodiac:scheme-expand-program/nal
     (kwd expressions: exprs)
     (opt (kwd elaboration-evaluator: elaboration-eval)
-      (lambda (expr sexp->raw phase)
-	(eval (sexp->raw expr))))
+      (lambda (expr parsed->raw phase)
+	(eval (parsed->raw expr))))
     (opt (kwd attributes: attr) 'previous)
     (opt (kwd vocabulary: vocab) #f))
 
@@ -23,14 +23,14 @@
     (kwd attributes: attr)
     (kwd vocabulary: vocab)
     (opt (kwd elaboration-evaluator: elaboration-eval)
-      (lambda (expr sexp->raw phase) (eval (sexp->raw expr)))))
+      (lambda (expr parsed->raw phase) (eval (parsed->raw expr)))))
 
   (define-argument-list zodiac:expand-program/nal
     (kwd expressions: exprs)
     (kwd attributes: attr)
     (kwd vocabulary: vocab)
     (opt (kwd elaboration-evaluator: elaboration-eval)
-      (lambda (expr sexp->raw phase) (eval (sexp->raw expr)))))
+      (lambda (expr parsed->raw phase) (eval (parsed->raw expr)))))
 
 (define-signature zodiac:misc^
   (pretty-print debug-level symbol-append flush-printf print-and-return))
