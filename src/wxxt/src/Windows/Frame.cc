@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Frame.cc,v 1.5 1998/04/11 13:57:30 mflatt Exp $
+ * $Id: Frame.cc,v 1.6 1998/07/13 21:00:16 mflatt Exp $
  *
  * Purpose: base class for all frames
  *
@@ -358,15 +358,15 @@ void wxFrame::SetMenuBar(wxMenuBar *new_menubar)
   if (new_menubar->GetParent())
     return;
 
-    if (menubar)
-	menubar->Destroy();	// destroy X internal representation
-    if ((menubar = new_menubar)) {
-	int ww, hh;
-
-	menubar->Create(this);
-	menubar->GetSize(&ww, &hh);
-	yoff = hh; // offset off client area inside frame
-    }
+  if (menubar)
+    menubar->Destroy();	// destroy X internal representation
+  if ((menubar = new_menubar)) {
+    int ww, hh;
+    
+    menubar->Create(this);
+    menubar->GetSize(&ww, &hh);
+    yoff = hh; // offset off client area inside frame
+  }
 }
 
 //-----------------------------------------------------------------------------
