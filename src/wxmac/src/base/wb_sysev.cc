@@ -4,13 +4,15 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_sysev.cc,v 1.4 2001/07/11 16:53:06 clements Exp $
+ * RCS_ID:      $Id: wb_sysev.cc,v 1.5 2001/11/05 06:55:00 clements Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
 /* static const char sccsid[] = "%W% %G%"; */
 
+#ifdef __GNUG__
 #pragma implementation "wx_sysev.h"
+#endif
 
 #include "common.h"
 #include "wx_utils.h"

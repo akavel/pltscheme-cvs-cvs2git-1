@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_main.cc,v 1.6 2001/10/18 21:40:43 clements Exp $
+ * RCS_ID:      $Id: wb_main.cc,v 1.7 2001/11/05 06:55:00 clements Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -13,7 +13,9 @@
 /* static const char sccsid[] = "%W% %G%"; */
 
 #ifdef __GNUG__
+#ifdef __GNUG__
 #pragma implementation
+#endif
 #endif
 
 #include "common.h"

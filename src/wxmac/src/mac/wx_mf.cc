@@ -4,14 +4,16 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_mf.cc,v 1.1.1.1 1998/01/13 17:55:00 mflatt Exp $
+ * RCS_ID:      $Id: wx_mf.cc,v 1.2 2001/11/05 06:55:01 clements Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
 static const char sccsid[] = "@(#)wx_mf.cc	1.2 5/9/94";
 
 #ifdef __GNUG__
+#ifdef __GNUG__
 #pragma implementation
+#endif
 #endif
 
 #include "common.h"

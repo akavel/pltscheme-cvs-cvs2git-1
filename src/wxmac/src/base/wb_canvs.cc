@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_canvs.cc,v 1.5 2001/07/11 16:53:06 clements Exp $
+ * RCS_ID:      $Id: wb_canvs.cc,v 1.6 2001/11/05 06:54:59 clements Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -12,7 +12,9 @@
 
 // #include "wx.h" // Uncomment this line for Borland precomp. headers to work
 
+#ifdef __GNUG__
 #pragma implementation
+#endif
 
 #include "common.h"
 #include "wx_setup.h"
