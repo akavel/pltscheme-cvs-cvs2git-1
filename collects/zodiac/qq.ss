@@ -1,4 +1,4 @@
-; $Id: qq.ss,v 1.12 1997/07/21 15:51:43 shriram Exp $
+; $Id: qq.ss,v 1.13 1997/07/22 18:09:24 shriram Exp $
 
 (define qq-base-level 0)
 
@@ -89,10 +89,6 @@
 		       (begin0
 			 (get-attribute attributes 'qq-unquote-type)
 			 (put-attribute attributes 'qq-unquote-type 'unquote))))
-		(display out) (newline)
-		(display this-changed?) (newline)
-		(display this-uq-type) (newline)
-		(newline)
 		(loop (cdr items)
 		  (cons (make-qq-seq-entry (car items) out this-changed?
 			  this-uq-type)
