@@ -4,7 +4,7 @@
  * Original Author: Giordano Pezzoli <gio@crcc.it>
  * Modified by: E. Zimmermann <edz@BSn.com>
  */
-static char RCS_id[] = "$Id: dde_ipc.c,v 1.1 1997/12/22 16:12:07 mflatt Exp $";
+static char RCS_id[] = "$Id: dde_ipc.c,v 1.1.1.1 1997/12/22 16:12:07 mflatt Exp $";
 
 /*
  * TODO:
@@ -18,11 +18,11 @@ static char RCS_id[] = "$Id: dde_ipc.c,v 1.1 1997/12/22 16:12:07 mflatt Exp $";
  * History
  * =======
  * $Log: dde_ipc.c,v $
- * Revision 1.1  1997/12/22 16:12:07  mflatt
- * Initial revision
+ * Revision 1.1.1.1  1997/12/22 16:12:07  mflatt
+ * import
  *
- * Revision 1.1  1997-12-22 16:12:07  mflatt
- * Initial revision
+ * Revision 1.1.1.1  1997-12-22 16:12:07  mflatt
+ * import
  *
  * Revision 1.4  1995/03/14  16:29:19  edz
  * Sync for distribution.

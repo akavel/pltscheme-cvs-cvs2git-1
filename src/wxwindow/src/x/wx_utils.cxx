@@ -4,16 +4,16 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_utils.cxx,v 1.1 1997/12/22 16:12:05 mflatt Exp $
+ * RCS_ID:      $Id: wx_utils.cxx,v 1.1.1.1 1997/12/22 16:12:05 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
 // $Log: wx_utils.cxx,v $
-// Revision 1.1  1997/12/22 16:12:05  mflatt
-// Initial revision
+// Revision 1.1.1.1  1997/12/22 16:12:05  mflatt
+// import
 //
-// Revision 1.1  1997-12-22 16:12:05  mflatt
-// Initial revision
+// Revision 1.1.1.1  1997-12-22 16:12:05  mflatt
+// import
 //
 // Revision 1.64  1994/11/03  00:23:48  edz
 // Fixed OS Version function for XView, Motif still needs to
