@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.66 1997/07/07 15:13:51 krentel Exp $
+;; $Id: sig.ss,v 1.67 1997/07/10 23:40:40 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -174,7 +174,8 @@
    unsaved-warning
    read-snips/chars-from-buffer
    open-input-buffer
-   print-paper-names))
+   print-paper-names
+   get-single-choice))
 
 (define-signature mred:console^
   (credits-proc
