@@ -4,15 +4,18 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_dialg.cxx,v 1.10 1998/10/16 18:19:41 mflatt Exp $
+ * RCS_ID:      $Id: wx_dialg.cxx,v 1.11 1998/11/17 21:40:45 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
 // $Log: wx_dialg.cxx,v $
-// Revision 1.10  1998/10/16 18:19:41  mflatt
+// Revision 1.11  1998/11/17 21:40:45  mflatt
 // .
 //
-// Revision 1.10  1998-10-16 18:19:41  mflatt
+// Revision 1.11  1998-11-17 21:40:45  mflatt
+// .
+//
+// Revision 1.10  1998/10/16 18:19:41  mflatt
 // .
 //
 // Revision 1.9  1998/09/23 01:11:14  mflatt
@@ -190,17 +193,20 @@ Bool wxDialogBox::Create(wxWindow *Parent, char *Title, Bool Modal,
   wxbDialogBox::Create(Parent, Title, Modal, x, y, width, height, style, name);
 
   SetName(name);
-  has_child = FALSE ;
+  has_child = FALSE;
 
   hSpacing = PANEL_HSPACING;
   vSpacing = PANEL_VSPACING;
   
-  initial_hspacing = hSpacing ;
-  initial_vspacing = vSpacing ;
+  initial_hspacing = hSpacing;
+  initial_vspacing = vSpacing;
 
-  current_hspacing = hSpacing ;
-  current_vspacing = vSpacing ;
+  current_hspacing = hSpacing;
+  current_vspacing = vSpacing;
 
+  labelFont = wxNORMAL_FONT;
+  buttonFont = wxNORMAL_FONT;
+  
   if (Title) dialogTitle = copystring(Title);
 
   if (Parent) Parent->AddChild(this);
@@ -422,6 +428,11 @@ void wxDialogBox::OnSize(int, int)
 
 void wxDialogBox::PostDestroyChildren(void)
 {
+}
+
+Window wxDialogBox::GetXWindow(void)
+{
+  return (Window)XtWindow((Widget)handle);
 }
 
 /*
