@@ -1,7 +1,7 @@
 /*
  * Global Data
  *
- * RCS_ID:      $Id: wb_data.cc,v 1.3 1998/04/16 14:34:55 robby Exp $
+ * RCS_ID:      $Id: wb_data.cc,v 1.4 2001/10/17 21:17:33 clements Exp $
  */
 
 /* static const char sccsid[] = "@(#)wb_data.cc	1.2 5/9/94"; */
@@ -51,8 +51,6 @@ int wxPageNumber;
 wxBrushList *wxTheBrushList = NULL;
 wxPenList   *wxThePenList = NULL;
 wxFontList   *wxTheFontList = NULL;
-wxGDIList   *wxTheBitmapList = NULL;
-//wxGDIList   *wxTheColourList = NULL;
 
 wxColourDatabase *wxTheColourDatabase = NULL;
 
