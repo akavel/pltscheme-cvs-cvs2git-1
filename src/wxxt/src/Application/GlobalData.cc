@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: GlobalData.cc,v 1.6 2000/03/02 13:59:05 mflatt Exp $
  *
  * Purpose: global data for an application (UNSHARED)
  *
