@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_dc.cxx,v 1.24 1999/11/13 03:36:48 mflatt Exp $
+ * RCS_ID:      $Id: wx_dc.cxx,v 1.25 1999/11/13 03:42:24 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -34,7 +34,7 @@
 
 #endif
 
-#include "wx_rgn.h"
+#include "../../../wxcommon/Region.h"
 #include "wx_pdf.h"
 
 #include <math.h>
