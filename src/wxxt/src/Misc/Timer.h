@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Timer.h,v 1.2 1999/11/04 17:25:35 mflatt Exp $
+ * $Id: Timer.h,v 1.3 2003/06/24 21:38:08 mflatt Exp $
  *
  * Purpose: class to process time outs
  *
@@ -48,7 +48,7 @@ public:
     Bool          one_shot;
 
     /* MrEd stuff: */
-    unsigned long expiration;
+    double expiration;
     wxTimer *next, *prev;
     void *context;
 
