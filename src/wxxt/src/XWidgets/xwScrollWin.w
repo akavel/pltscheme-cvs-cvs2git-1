@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 1.1 (see README for history)
 # 
-# $Id: xwScrollWin.w,v 1.3 1998/02/07 13:44:00 mflatt Exp $
+# $Id: xwScrollWin.w,v 1.4 1998/07/09 22:45:04 mflatt Exp $
 
 @CLASS XfwfScrolledWindow (XfwfBoard)  @file = xwScrollWin
 
@@ -567,6 +567,14 @@ sliders in the scrollbars.
 @proc xws_get_scroll_area($, Dimension *x, Dimension *y)
 {
   XtVaGetValues($board, XtNwidth, x, XtNheight, y, NULL);
+}
+
+@proc ScrollWinViewableHeight($, int *boardht)
+{
+  Position boardx, boardy;
+  int boardwd;
+	
+  $compute_inside($, &boardx, &boardy, &boardwd, boardht);  
 }
 
 @IMPORTS
