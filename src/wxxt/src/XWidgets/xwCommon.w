@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 1.2 for FWF V4.0
 #
-# $Id: xwCommon.w,v 1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwCommon.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
 
 @class XfwfCommon (Composite)  @file=xwCommon
 

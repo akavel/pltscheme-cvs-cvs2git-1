@@ -1,6 +1,6 @@
 # Version 2.1 for FWF V4.0
 #
-# $Id: xwLabel.w,v 1.1 1997/12/22 17:29:02 mflatt Exp $
+# $Id: xwLabel.w,v 1.1.1.1 1997/12/22 17:29:02 mflatt Exp $
 
 @class XfwfLabel (XfwfBoard) @file=xwLabel
 

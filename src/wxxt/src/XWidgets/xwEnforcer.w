@@ -1,7 +1,7 @@
 #
 # 1.0 (Feb 1995)
 #
-# $Id: xwEnforcer.w,v 1.1 1997/12/22 17:29:04 mflatt Exp $
+# $Id: xwEnforcer.w,v 1.1.1.1 1997/12/22 17:29:04 mflatt Exp $
 
 @class XfwfEnforcer (XfwfBoard) @file=xwEnforcer
 

@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 2.1 for FWF V4.0
 #
-# $Id: xwSlider2.w,v 1.1 1997/12/22 17:29:03 mflatt Exp $
+# $Id: xwSlider2.w,v 1.1.1.1 1997/12/22 17:29:03 mflatt Exp $
 
 @class XfwfSlider2 (XfwfLabel) @file=xwSlider2
 

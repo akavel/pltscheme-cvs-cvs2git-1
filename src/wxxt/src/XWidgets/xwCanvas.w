@@ -1,7 +1,7 @@
 #
 # 1.0 (Feb 1995)
 #
-# $Id: xwCanvas.w,v 1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwCanvas.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
 
 @class XfwfCanvas (XfwfBoard) @file=xwCanvas
 

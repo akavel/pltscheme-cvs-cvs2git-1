@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Application.cc,v 1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: Application.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
  *
  * Purpose: global utilities for wxWindows application and main loop
  *

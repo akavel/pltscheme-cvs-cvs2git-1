@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 2.1 for FWF V4.0
 # 
-# $Id: xwToggle.w,v 1.1 1997/12/22 17:29:02 mflatt Exp $
+# $Id: xwToggle.w,v 1.1.1.1 1997/12/22 17:29:02 mflatt Exp $
 
 @class XfwfToggle(XfwfButton)  @file=xwToggle
 

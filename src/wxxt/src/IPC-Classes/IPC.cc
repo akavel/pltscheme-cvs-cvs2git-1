@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: IPC.cc,v 1.1 1997/12/22 17:28:52 mflatt Exp $
+ * $Id: IPC.cc,v 1.1.1.1 1997/12/22 17:28:52 mflatt Exp $
  *
  * Purpose: basic IPC classes
  *

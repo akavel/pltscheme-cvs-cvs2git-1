@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Bitmap.cc,v 1.1 1997/12/22 17:28:50 mflatt Exp $
+ * $Id: Bitmap.cc,v 1.1.1.1 1997/12/22 17:28:50 mflatt Exp $
  *
  * Purpose: bitmap classes to implement pixmaps, icons, and cursors
  *

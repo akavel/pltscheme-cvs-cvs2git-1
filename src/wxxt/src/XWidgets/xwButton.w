@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 2.0 for FWF V4.0
 #
-# $Id: xwButton.w,v 1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwButton.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
 
 @class XfwfButton(XfwfLabel)  @file=xwButton
 

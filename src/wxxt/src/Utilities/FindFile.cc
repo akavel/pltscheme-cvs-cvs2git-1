@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: FindFile.cc,v 1.1 1997/12/22 17:28:56 mflatt Exp $
+ * $Id: FindFile.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
  *
  * Purpose: find first/next file (DO NOT USE MULTIPLE TIMES SIMULTANEOUS!!)
  *
@@ -22,7 +22,7 @@
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
  */
-// $Id: FindFile.cc,v 1.1 1997/12/22 17:28:56 mflatt Exp $
+// $Id: FindFile.cc,v 1.1.1.1 1997/12/22 17:28:56 mflatt Exp $
 
 #include "wx.h"
 

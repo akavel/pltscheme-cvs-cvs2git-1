@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Panel.h,v 1.1 1997/12/22 17:28:58 mflatt Exp $
+ * $Id: Panel.h,v 1.1.1.1 1997/12/22 17:28:58 mflatt Exp $
  *
  * Purpose: base class for all panels
  *

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: MultiText.cc,v 1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: MultiText.cc,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
  *
  * Purpose: multi text panel item
  *

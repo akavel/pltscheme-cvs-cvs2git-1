@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Colour.h,v 1.1 1997/12/22 17:28:51 mflatt Exp $
+ * $Id: Colour.h,v 1.1.1.1 1997/12/22 17:28:51 mflatt Exp $
  *
  * Purpose: classes to cover colours and colourmaps
  *

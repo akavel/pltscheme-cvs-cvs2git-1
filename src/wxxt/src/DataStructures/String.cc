@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: String.cc,v 1.1 1997/12/22 17:28:46 mflatt Exp $
+ * $Id: String.cc,v 1.1.1.1 1997/12/22 17:28:46 mflatt Exp $
  *
  * Purpose: wxWindows string class (AIAI code)
  *

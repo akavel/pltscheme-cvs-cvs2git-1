@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: PrintSetup.cc,v 1.1 1997/12/22 17:28:46 mflatt Exp $
+ * $Id: PrintSetup.cc,v 1.1.1.1 1997/12/22 17:28:46 mflatt Exp $
  *
  * Purpose: print setup for postscript printing (setup/papertype/paperdatabase)
  *

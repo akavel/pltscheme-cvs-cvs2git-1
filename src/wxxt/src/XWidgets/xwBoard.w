@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 2.0.1 for FWF V4.0 (See README for history)
 #
-# $Id: xwBoard.w,v 1.1 1997/12/22 17:29:04 mflatt Exp $
+# $Id: xwBoard.w,v 1.1.1.1 1997/12/22 17:29:04 mflatt Exp $
 
 @class XfwfBoard (XfwfFrame) @file=xwBoard
 

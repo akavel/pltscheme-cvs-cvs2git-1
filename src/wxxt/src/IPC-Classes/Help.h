@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Help.h,v 1.1 1997/12/22 17:28:52 mflatt Exp $
+ * $Id: Help.h,v 1.1.1.1 1997/12/22 17:28:52 mflatt Exp $
  *
  * Purpose: connection to wxHelp server
  *

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: HashTable.cc,v 1.1 1997/12/22 17:28:46 mflatt Exp $
+ * $Id: HashTable.cc,v 1.1.1.1 1997/12/22 17:28:46 mflatt Exp $
  *
  * Purpose: hash table
  *

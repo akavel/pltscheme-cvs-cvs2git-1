@@ -3,7 +3,7 @@
 # 14 Oct '92
 # Version 2.3 for FWF V4.0
 #
-# $Id: xwRowCol.w,v 1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwRowCol.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
 
 
 @CLASS XfwfRowCol (XfwfBoard)  @file=xwRowCol

@@ -2,7 +2,7 @@
 # Bert Bos <bert@let.rug.nl>
 # Version 1.1 (see README for history)
 # 
-# $Id: xwScrollWin.w,v 1.1 1997/12/22 17:29:05 mflatt Exp $
+# $Id: xwScrollWin.w,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $
 
 @CLASS XfwfScrolledWindow (XfwfBoard)  @file = xwScrollWin
 

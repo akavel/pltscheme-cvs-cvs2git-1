@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Pen+Brush.h,v 1.1 1997/12/22 17:28:51 mflatt Exp $
+ * $Id: Pen+Brush.h,v 1.1.1.1 1997/12/22 17:28:51 mflatt Exp $
  *
  * Purpose: pen and brush classes needed for drawing
  *

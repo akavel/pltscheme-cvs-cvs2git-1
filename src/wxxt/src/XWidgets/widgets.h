@@ -1,4 +1,4 @@
-/* $Id: widgets.h,v 1.1 1997/12/22 17:29:05 mflatt Exp $ */
+/* $Id: widgets.h,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $ */
 
 /*
  * Main include file for widgets used by the Xt port of wxWindows

@@ -3,7 +3,7 @@
 # 2 Nov '92
 # Version 1.0 for FWF V4.0
 # 
-# $Id: xwScrollbar.w,v 1.1 1997/12/22 17:29:03 mflatt Exp $
+# $Id: xwScrollbar.w,v 1.1.1.1 1997/12/22 17:29:03 mflatt Exp $
 
 @CLASS XfwfScrollbar (XfwfBoard)  @file = xwScrollbar
 

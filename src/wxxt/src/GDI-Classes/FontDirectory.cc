@@ -1,5 +1,5 @@
  /*								-*- C++ -*-
- * $Id: FontDirectory.cc,v 1.1 1997/12/22 17:28:51 mflatt Exp $
+ * $Id: FontDirectory.cc,v 1.1.1.1 1997/12/22 17:28:51 mflatt Exp $
  *
  * Purpose: wxWindows font name handling
  *

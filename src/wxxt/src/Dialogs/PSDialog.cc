@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: PSDialog.cc,v 1.1 1997/12/22 17:28:49 mflatt Exp $
+ * $Id: PSDialog.cc,v 1.1.1.1 1997/12/22 17:28:49 mflatt Exp $
  *
  * Purpose: postscript dialog
  *
