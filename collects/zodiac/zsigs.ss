@@ -1,9 +1,8 @@
-;; Reader-File:  unit-sigs.ss
+;;
+;; $Id: zsigs.ss,v 1.4 1997/02/25 16:13:43 krentel Exp $
 ;;
 ;; The signatures for all scanner/reader units.
 ;;
-
-(require-library "unitsig.ss")
 
 ;;
 ;; Top-level zodiac structures (outside the hierarchy)
