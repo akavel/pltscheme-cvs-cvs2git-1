@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Gauge.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: Gauge.h,v 1.2 1998/09/06 01:54:02 mflatt Exp $
  *
  * Purpose: gauge panel item
  *
@@ -45,7 +45,6 @@ public:
 		long style = wxHORIZONTAL, char *name = "gauge");
 
     void  SetBezelFace(int WXUNUSED(w)) {}
-    void  SetButtonColour(wxColour *col);
     void  SetRange(int r);
     void  SetShadowWidth(int WXUNUSED(w)) {}
     void  SetValue(int pos);
