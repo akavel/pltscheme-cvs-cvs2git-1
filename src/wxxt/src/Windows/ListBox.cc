@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: ListBox.cc,v 1.13 1999/01/09 18:15:02 mflatt Exp $
+ * $Id: ListBox.cc,v 1.14 1999/08/14 00:38:11 mflatt Exp $
  *
  * Purpose: list box panel item
  *
@@ -39,6 +39,9 @@
 // don't allocate or free for every append or delete
 #define LIST_CHUNK_SIZE	20
 #define MULTILIST	((XfwfMultiListWidget)(X->handle))
+
+#define wxLIST_BOX_WIDTH	70
+#define wxLIST_BOX_HEIGHT	50
 
 //-----------------------------------------------------------------------------
 // create and destroy wxListBox
