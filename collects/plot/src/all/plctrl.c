@@ -1,4 +1,4 @@
-/* $Id: plctrl.c,v 1.2 2005/03/17 21:39:21 eli Exp $
+/* $Id: plctrl.c,v 1.3 2005/03/18 20:32:41 eli Exp $
 
 	Misc. control routines, like begin, end, exit, change graphics/text
 	mode, change color.  Includes some spillage from plcore.c.  If you
@@ -32,6 +32,7 @@
 /* Static functions */
 
 /* Used by any external init code to suggest a path */
+MZ_DLLEXPORT
 char* plplotLibDir = 0;
 
 static void
