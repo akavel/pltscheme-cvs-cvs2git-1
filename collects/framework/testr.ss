@@ -1,5 +1,5 @@
 ;;
-;; $Id: testr.ss,v 1.13 1999/02/05 21:58:06 robby Exp $
+;; $Id: testr.ss,v 1.14 1999/02/11 17:19:12 robby Exp $
 ;;
 ;; (mred:test:run-interval [msec]) is parameterization for the
 ;; interval (in milliseconds) between starting actions.
@@ -680,4 +680,9 @@
 		(when (ivar-in-class? 'on-event (object-class new-window))
 		  (send-mouse-event new-window enter))
 		(send new-window focus)
-		(void))))])))))
+		(void))))]))))
+  
+  (define (close-frame frame)
+    (when (send-frame can-close?)
+      (send frame on-close)
+      (send frame show #f))))
