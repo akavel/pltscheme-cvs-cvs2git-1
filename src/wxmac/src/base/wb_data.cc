@@ -1,7 +1,7 @@
 /*
  * Global Data
  *
- * RCS_ID:      $Id: wb_data.cc,v 1.1 1998/01/13 17:54:58 mflatt Exp $
+ * RCS_ID:      $Id: wb_data.cc,v 1.1.1.1 1998/01/13 17:54:58 mflatt Exp $
  */
 
 /* static const char sccsid[] = "@(#)wb_data.cc	1.2 5/9/94"; */
