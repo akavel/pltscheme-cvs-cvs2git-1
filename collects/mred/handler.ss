@@ -128,9 +128,14 @@
 					      locate-file
 					      filename))])
 		 (if already-open
-		     (send* already-open
-		       (show #t)
-		       (iconize #f))
+		     (if (eq? wx:platform 'unix)
+			 (send* already-open
+			   (iconize #f)
+			   (show #f)
+			   (show #t))
+			 (send* already-open
+			   (show #t)
+			   (iconize #f)))
 		     (let ([handler
 			    (if (string? filename)
 				(find-format-handler filename)
