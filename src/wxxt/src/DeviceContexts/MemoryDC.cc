@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: MemoryDC.cc,v 1.7 1999/12/06 23:15:19 mflatt Exp $
  *
  * Purpose: device context to draw into wxBitmaps
  *
