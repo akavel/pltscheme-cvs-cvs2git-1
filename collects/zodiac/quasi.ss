@@ -1,4 +1,4 @@
-; $Id: quasi.ss,v 1.2 1997/08/22 23:01:28 shriram Exp $
+; $Id: quasi.ss,v 1.3 1997/08/22 23:25:16 shriram Exp $
 
 ; Fix the null? in qq-normalize.
 
@@ -42,8 +42,6 @@
 		(qq-normalize
 		  (let qq ((x template)
 			    (level 0))
-		    (pretty-print (sexp->raw x))
-		    (newline)
 		    (let ((qq-list (lambda (x level)
 				     (let* ((old-first (syntax-car x))
 					     (old-rest (syntax-cdr x))
@@ -89,7 +87,7 @@
 					x
 					(list '#%cons
 					  (list '#%cons
-					    (list '#%quote '#%unquote-splicing)
+					    (list '#%quote 'unquote-splicing)
 					    (list '#%cons
 					      (qq-normalize q-body body)
 					      '()))
