@@ -1,4 +1,4 @@
-; $Id: x.ss,v 1.47 1998/11/04 19:52:55 mflatt Exp $
+; $Id: x.ss,v 1.48 1999/02/02 21:03:25 mflatt Exp $
 
 (unit/sig zodiac:expander^
   (import
@@ -353,5 +353,14 @@
 			     (lambda ()
 			       '(internal-error:dummy-for-sake-of-cdr!))))))
 	  names))))
+
+  (define copy-env
+    (lambda (env)
+      (let ([new (make-hash-table)])
+	(hash-table-for-each
+	 env
+	 (lambda (key val)
+	   (hash-table-put! new key val)))
+	new)))
 
   )
