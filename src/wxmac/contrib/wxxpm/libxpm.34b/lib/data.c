@@ -36,7 +36,7 @@
 static char *RCS_Version = "$XpmVersion: 3.4b $";
 
 /* Internal version number */
-static char *RCS_Id = "$Id: data.c,v 1.2 1998/06/02 20:51:37 robby Exp $";
+static char *RCS_Id = "$Id: data.c,v 1.3 2001/11/02 21:53:09 clements Exp $";
 
 #include "xpm34p.h"
 #ifdef VMS
@@ -176,7 +176,9 @@ xpmNextString(xpmData *mdata)
 
 	/* get to the end of the current string */
 	if (mdata->Eos)
-	    while ((c = *mdata->cptr++) && c != mdata->Eos);
+	    while ((c = *mdata->cptr++) && c != mdata->Eos){  
+	      // do nothing
+	    }
 
 	/*
 	 * then get to the beginning of the next string looking for possible
@@ -197,7 +199,9 @@ xpmNextString(xpmData *mdata)
 
 	/* get to the end of the current string */
 	if (mdata->Eos)
-	    while ((c = getc(file)) != mdata->Eos && c != EOF);
+	    while ((c = getc(file)) != mdata->Eos && c != EOF){
+	      // do nothing
+	    }
 
 	/*
 	 * then get to the beginning of the next string looking for possible
