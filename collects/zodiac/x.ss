@@ -1,4 +1,4 @@
-; $Id: x.ss,v 1.39 1998/02/08 16:03:08 mflatt Exp $
+; $Id: x.ss,v 1.40 1998/03/13 21:20:45 shriram Exp $
 
 (unit/sig zodiac:expander^
   (import
@@ -193,7 +193,6 @@
 					       (exn-message exn)))))
 			  (let* ((rewriter (macro-resolution-rewriter r))
 				  (m (new-mark))
-				  (marker (mark-expression m))
 				  (rewritten (rewriter expr env))
 				  (structurized (structurize-syntax
 						  rewritten expr (list m)))
