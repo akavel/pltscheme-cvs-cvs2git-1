@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: FontDirectory.cc,v 1.4 1999/08/02 17:31:51 mflatt Exp $
+ * $Id: FontDirectory.cc,v 1.5 1999/09/17 02:20:32 mflatt Exp $
  *
  * Purpose: wxWindows font name handling
  *
@@ -580,7 +580,7 @@ char *wxFontNameDirectory::GetFontName(int fontid)
   if (item->isfamily)
     return NULL;
 
-  return item->name;
+  return item->name + 1;
 }
 
 int wxFontNameDirectory::GetFontId(const char *name)
