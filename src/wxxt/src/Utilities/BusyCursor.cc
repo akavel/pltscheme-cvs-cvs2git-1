@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: BusyCursor.cc,v 1.10 1999/12/05 18:11:28 mflatt Exp $
  *
  * Purpose: busy cursor
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

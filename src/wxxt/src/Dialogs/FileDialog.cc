@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: FileDialog.cc,v 1.7 1999/11/24 21:20:19 mflatt Exp $
  *
  * Purpose: file load and save dialogs
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

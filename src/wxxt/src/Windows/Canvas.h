@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Canvas.h,v 1.11 2003/06/14 02:24:33 mflatt Exp $
  *
  * Purpose: canvas panel item
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

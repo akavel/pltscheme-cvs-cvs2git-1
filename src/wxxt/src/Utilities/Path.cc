@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Path.cc,v 1.4 2002/09/19 16:14:26 mflatt Exp $
  *
  * Purpose: path- and filename manipulations
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

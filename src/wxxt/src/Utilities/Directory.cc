@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Directory.cc,v 1.3 1999/11/24 21:20:20 mflatt Exp $
  *
  * Purpose: basic file and directory handling
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: CheckBox.h,v 1.5 1999/11/18 16:35:07 mflatt Exp $
  *
  * Purpose: check box panel item
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

@@ -1,11 +1,11 @@
 /*								-*- C++ -*-
- * $Id: wxSetup.h,v 1.2 1999/11/04 17:25:31 mflatt Exp $
  *
  * Purpose: Window library configuration file. Note: you may need to edit
  *          the main makefile after you have edited this.
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

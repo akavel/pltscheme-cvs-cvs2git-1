@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Dialogs.h,v 1.2 1998/09/06 01:54:00 mflatt Exp $
  *
  * Purpose: common dialogs
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

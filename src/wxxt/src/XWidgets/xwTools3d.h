@@ -1,8 +1,8 @@
 /*
- * $Id: xwTools3d.h,v 1.2 1998/11/12 18:14:49 mflatt Exp $
  */
 
 /***********************************************************
+Copyright 2004 PLT Scheme, Inc.
 Copyright 1987, 1988 by Digital Equipment Corporation, Maynard, Massachusetts,
 and the Massachusetts Institute of Technology, Cambridge, Massachusetts.
 Copyright 1995 by Markus Holzem

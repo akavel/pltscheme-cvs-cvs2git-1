@@ -1,5 +1,4 @@
 /*
- * $Id: xwscroll.c,v 1.1.1.1 1997/12/22 17:29:00 mflatt Exp $
  */
 
 #include <X11/Intrinsic.h>

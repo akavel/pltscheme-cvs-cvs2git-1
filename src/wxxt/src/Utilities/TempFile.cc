@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: TempFile.cc,v 1.2 1999/11/24 21:20:20 mflatt Exp $
  *
  * Purpose: filename for temporary files
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

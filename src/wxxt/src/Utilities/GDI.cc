@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: GDI.cc,v 1.5 2003/09/04 19:19:33 mflatt Exp $
  *
  * Purpose: common GDI routines
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

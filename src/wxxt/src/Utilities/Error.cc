@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Error.cc,v 1.3 2000/05/22 15:21:21 mflatt Exp $
  *
  * Purpose: error routines
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

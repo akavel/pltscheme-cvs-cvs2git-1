@@ -1,7 +1,6 @@
 /*
  * File: <scroll.h>
  *
- * $Id: xwscroll.h,v 1.1.1.1 1997/12/22 17:29:06 mflatt Exp $
  *
  * Declarations and typedefs for the Free Widget Foundation
  * Scrolling Widget Interface Policy.

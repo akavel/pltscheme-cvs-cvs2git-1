@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: DialogBox.h,v 1.6 2003/04/22 15:05:07 mflatt Exp $
  *
  * Purpose: dialog box
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

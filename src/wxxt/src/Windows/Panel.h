@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Panel.h,v 1.6 2000/03/02 13:59:06 mflatt Exp $
  *
  * Purpose: base class for all panels
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

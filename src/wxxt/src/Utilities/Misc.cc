@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Misc.cc,v 1.4 2000/10/18 01:53:54 mflatt Exp $
  *
  * Purpose: miscellaneous utilities
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

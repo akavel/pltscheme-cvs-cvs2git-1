@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Timer.h,v 1.3 2003/06/24 21:38:08 mflatt Exp $
  *
  * Purpose: class to process time outs
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: Application.cc,v 1.4 1999/11/27 00:59:28 mflatt Exp $
  *
  * Purpose: global utilities for wxWindows application and main loop
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *

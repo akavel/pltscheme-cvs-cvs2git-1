@@ -1,10 +1,10 @@
 /*								-*- C++ -*-
- * $Id: EvtHandler.h,v 1.7 1999/11/21 00:08:47 mflatt Exp $
  *
  * Purpose: base event handler of windows etc.
  *
  * Authors: Markus Holzem and Julian Smart
  *
+ * Copyright: (C) 2004 PLT Scheme, Inc.
  * Copyright: (C) 1995, AIAI, University of Edinburgh (Julian)
  * Copyright: (C) 1995, GNU (Markus)
  *
