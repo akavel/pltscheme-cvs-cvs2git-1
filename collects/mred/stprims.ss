@@ -1,5 +1,5 @@
 ;;
-;; $Id: stprims.ss,v 1.19 1998/02/26 23:54:56 steck Exp $
+;; $Id: stprims.ss,v 1.20 1998/05/12 03:10:21 robby Exp $
 ;;
 ;; Primitives for faking user input.
 ;; Buttons, Keystrokes, Menus, Mice.
@@ -157,7 +157,11 @@
 	    wx:const-event-type-choice-command 
 	    'mred:test:set-choice!
 	    (find-object wx:choice%)
-	    (lambda () (send choice find-string str)))])
+	    (lambda ()
+	      (let ([index (send choice find-string str)])
+		(when (= index -1)
+		  (error 'set-choice! "string ~a not in choice ~a~n" str choice))
+		index)))])
     (f choice str)))
 
   ;;
