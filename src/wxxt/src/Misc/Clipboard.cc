@@ -4,7 +4,7 @@
  * Author:      Julian Smart and Matthew Flatt
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: Clipboard.cc,v 1.6 2000/05/11 17:10:50 mflatt Exp $
+ * RCS_ID:      $Id: Clipboard.cc,v 1.7 2000/06/13 15:05:05 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -272,10 +272,12 @@ extern void wxDispatchEventsUntil(int (*)(void *), void *);
 
 static int clipget_in_progress;
 
+#if 0
 static int CheckNotInProgress(void *WXUNUSED(v))
 {
   return !clipget_in_progress;
 }
+#endif
 
 static int CheckReadyTarget(void *WXUNUSED(v))
 {
