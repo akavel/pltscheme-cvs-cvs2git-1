@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: BusyCursor.cc,v 1.4 1998/04/23 19:07:03 mflatt Exp $
+ * $Id: BusyCursor.cc,v 1.5 1998/07/18 21:51:02 mflatt Exp $
  *
  * Purpose: busy cursor
  *
@@ -44,7 +44,10 @@ void wxXSetNoCursor(wxWindow *win, wxCursor *cursor)
   else
     c = GETCURSOR(win->cursor);
 
-  XtVaSetValues(win->X->handle, XtNcursor, c, NULL);
+  Cursor cc;
+  XtVaGetValues(win->X->handle, XtNcursor, &cc, NULL);
+  if (cc != c)
+    XtVaSetValues(win->X->handle, XtNcursor, c, NULL);
   
   for(wxChildNode *node = win->GetChildren()->First(); node; node = node->Next()) {
     wxWindow *child = (wxWindow *) node->Data ();
