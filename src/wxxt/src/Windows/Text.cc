@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Text.cc,v 1.2 1998/02/05 23:00:33 mflatt Exp $
+ * $Id: Text.cc,v 1.3 1998/04/11 13:57:31 mflatt Exp $
  *
  * Purpose: text panel item
  *
@@ -131,6 +131,9 @@ Bool wxText::Create(wxPanel *panel, wxFunction function, char *label,
     XEvent dummy;
     XtCallActionProc(X->handle, "redraw-display", &dummy, NULL, 0);
     AddEventHandlers();
+
+    cursor = wxIBEAM_CURSOR;
+
     return TRUE;
 }
 

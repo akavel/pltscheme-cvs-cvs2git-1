@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: GlobalData.h,v 1.1.1.1 1997/12/22 17:28:45 mflatt Exp $
+ * $Id: GlobalData.h,v 1.2 1998/04/11 13:57:29 mflatt Exp $
  *
  * Purpose: global data for an application (UNSHARED)
  *
@@ -206,6 +206,7 @@ extern wxColour* wxLIGHT_GREY;
 extern wxCursor* wxSTANDARD_CURSOR;
 extern wxCursor* wxHOURGLASS_CURSOR;
 extern wxCursor* wxCROSS_CURSOR;
+extern wxCursor* wxIBEAM_CURSOR;
 
 //-- Types --------------------------------------------------------------------
 

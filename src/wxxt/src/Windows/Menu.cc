@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Menu.cc,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: Menu.cc,v 1.2 1998/04/11 13:57:31 mflatt Exp $
  *
  * Purpose: simple menu class
  *
@@ -110,6 +110,7 @@ Bool wxMenu::PopupMenu(Widget in_w, int root_x, int root_y)
 	 XtNfont,       font->GetInternalFont(),
 	 XtNforeground, fg->GetPixel(wxAPP_COLOURMAP),
 	 XtNbackground, bg->GetPixel(wxAPP_COLOURMAP),
+	 XtNcursor,     None,
 	 NULL);
     XtRealizeWidget(X->shell);
     XtAddCallback(X->menu, XtNonSelect, wxMenu::EventCallback, this);
