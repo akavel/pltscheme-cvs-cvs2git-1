@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_main.cxx,v 1.8 1998/10/19 03:49:54 mflatt Exp $
+ * RCS_ID:      $Id: wx_main.cxx,v 1.9 1999/06/05 13:52:25 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -243,7 +243,7 @@ void wxInitialize(HINSTANCE hInstance)
   wndclass.hIcon         = wxSTD_FRAME_ICON;
   wndclass.hCursor       = NULL /* LoadCursor( NULL, IDC_ARROW ) */;
 #if FAFA_LIB
-  wndclass.hbrBackground =  (HBRUSH)(COLOR_APPWORKSPACE+1) ;
+  wndclass.hbrBackground =  (HBRUSH)(COLOR_BTNFACE+1) ;
 #else
   wndclass.hbrBackground = GetStockObject( WHITE_BRUSH );
 #endif
@@ -293,7 +293,7 @@ void wxInitialize(HINSTANCE hInstance)
   wndclass4.hIcon         = wxSTD_MDICHILDFRAME_ICON;
   wndclass4.hCursor       = NULL /* LoadCursor( NULL, IDC_ARROW ) */;
 #if FAFA_LIB
-  wndclass4.hbrBackground =  (HBRUSH)(COLOR_WINDOW+1) ;
+  wndclass4.hbrBackground =  (HBRUSH)(COLOR_BTNFACE+1) ;
 #else
   wndclass4.hbrBackground = NULL;
 #endif
