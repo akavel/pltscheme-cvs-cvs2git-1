@@ -1,5 +1,5 @@
  /*								-*- C++ -*-
- * $Id: FontDirectory.h,v 1.4 1999/11/29 22:49:26 mflatt Exp $
+ * $Id: FontDirectory.h,v 1.5 2002/09/17 00:23:57 mflatt Exp $
  *
  * Purpose: wxWindows font name handling
  *
@@ -27,7 +27,9 @@
 #define FontDirectory_h
 
 #ifdef __GNUG__
-#pragma interface
+# ifndef wx_mac
+#  pragma interface
+# endif
 #endif
 
 class wxHashTable;
