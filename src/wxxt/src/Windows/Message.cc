@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Message.cc,v 1.3 1998/08/08 03:33:04 mflatt Exp $
+ * $Id: Message.cc,v 1.4 1998/12/05 01:08:21 mflatt Exp $
  *
  * Purpose: message panel item
  *
@@ -66,7 +66,7 @@ static void do_nothing()
 Bool wxMessage::Create(wxPanel *panel, char *message,
 		      int x, int y, long style, char *name)
 {
-    message = wxGetCtlLabel(message);
+  // message = wxGetCtlLabel(message);
 
     bm_label = NULL;
 
