@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_frame.cxx,v 1.8 1998/12/07 02:52:30 mflatt Exp $
+ * RCS_ID:      $Id: wx_frame.cxx,v 1.9 1998/12/22 23:51:12 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -875,9 +875,14 @@ BOOL wxFrameWnd::OnCommand(WORD menuId, WORD cmd, HWND WXUNUSED(control))
 {
   if (cmd == 0 || cmd == 1 ) { // Can be either a menu command or an accelerator.
     wxFrame *frame = (wxFrame *)wx_window;
-    if (frame->GetMenuBar()) {
-      wxMenuItem *i = frame->GetMenuBar()->FindItemForMenuId(menuId);
+
+    wxMenuBar *mb;
+    if (mb = frame->GetMenuBar()) {
+      wxMenuItem *i = mb->FindItemForMenuId(menuId);
       if (i) {
+	if (i->checkable)
+	  mb->Check(i->itemId, !mb->Checked(i->itemId));
+    
 	((wxFrame *)wx_window)->Command(i->itemId);
 	return TRUE;
       }
