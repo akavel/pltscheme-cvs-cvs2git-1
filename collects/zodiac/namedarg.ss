@@ -1,10 +1,9 @@
-; $Id: namedarg.ss,v 1.8 1997/07/21 15:51:43 shriram Exp $
+; $Id: namedarg.ss,v 1.9 1998/01/14 15:04:20 mflatt Exp $
 
-(begin-construction-time
+(begin-construction-time (reference-library "match.ss"))
+(begin-construction-time (reference-library "macro.ss"))
 
-(reference-library "match.ss")
-(reference-library "macro.ss")
-
+(begin-construction-time 
 (invoke-open-unit
 
 (unit (import)
