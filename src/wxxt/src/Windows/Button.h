@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Button.h,v 1.3 1999/11/18 16:35:07 mflatt Exp $
+ * $Id: Button.h,v 1.4 1999/11/25 16:32:23 mflatt Exp $
  *
  * Purpose: button panel item
  *
@@ -35,7 +35,6 @@ class wxPanel;
 
 class wxButton : public wxItem {
 public:
-    wxButton(void);
     ~wxButton(void);
 
     wxButton(wxPanel *panel, wxFunction func, char *label,

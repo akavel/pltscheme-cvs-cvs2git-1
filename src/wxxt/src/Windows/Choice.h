@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Choice.h,v 1.7 1999/11/18 16:35:07 mflatt Exp $
+ * $Id: Choice.h,v 1.8 1999/11/25 16:32:23 mflatt Exp $
  *
  * Purpose: choice panel item
  *
@@ -36,7 +36,6 @@ class wxPanel;
 // Choice item
 class wxChoice : public wxItem {
 public:
-    wxChoice(void);
     wxChoice(wxPanel *panel, wxFunction func, char *label,
 	     int x = -1, int y = -1, int width = -1, int height = -1,
 	     int n = 0, char **choices = NULL,

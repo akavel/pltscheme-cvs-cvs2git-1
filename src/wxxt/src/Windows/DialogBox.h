@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: DialogBox.h,v 1.2 1999/11/04 17:25:37 mflatt Exp $
+ * $Id: DialogBox.h,v 1.3 1999/11/25 16:32:23 mflatt Exp $
  *
  * Purpose: dialog box
  *
@@ -33,17 +33,11 @@
 class wxDialogBox : public wxFrame {
 public:
     wxDialogBox(void);
-    wxDialogBox(wxFrame *parent, char *title, Bool modal=FALSE,
-		int x=-1, int y=-1, int width=500, int height=500,
-		long style=wxDEFAULT_DIALOG_STYLE, char *name="dialogBox");
     wxDialogBox(wxWindow *parent, char *title, Bool modal=FALSE,
 		int x=-1, int y=-1, int width=500, int height=500,
 		long style=wxDEFAULT_DIALOG_STYLE, char *name="dialogBox");
 
     Bool Create(wxFrame *parent, char *title, Bool modal=FALSE,
-		int x=-1, int y=-1, int width=500, int height=500,
-		long style=wxDEFAULT_DIALOG_STYLE, char *name="dialogBox");
-    Bool Create(wxWindow *parent, char *title, Bool modal=FALSE,
 		int x=-1, int y=-1, int width=500, int height=500,
 		long style=wxDEFAULT_DIALOG_STYLE, char *name="dialogBox");
 
