@@ -1,4 +1,4 @@
-/* $Id: plot3d.c,v 1.1 2004/03/01 20:54:52 cozmic Exp $
+/* $Id: plot3d.c,v 1.2 2005/03/17 21:39:21 eli Exp $
 
 	3d plot routines.
 */
@@ -112,6 +112,7 @@ c_plmesh(PLFLT *x, PLFLT *y, PLFLT **z, PLINT nx, PLINT ny, PLINT opt)
  *
 \*--------------------------------------------------------------------------*/
 
+MZ_DLLEXPORT
 void
 c_plmeshc(PLFLT *x, PLFLT *y, PLFLT **z, PLINT nx, PLINT ny, PLINT opt,
 	 PLFLT *clevel, PLINT nlevel)
@@ -592,6 +593,7 @@ plsurf3d(PLFLT *x, PLFLT *y, PLFLT **z, PLINT nx, PLINT ny,
  * see plot3dc() bellow
 \*--------------------------------------------------------------------------*/
 
+MZ_DLLEXPORT
 void
 c_plot3d(PLFLT *x, PLFLT *y, PLFLT **z,
 	 PLINT nx, PLINT ny, PLINT opt, PLINT side)
