@@ -1,9 +1,13 @@
-; $Id: misc.ss,v 1.8 1998/03/15 00:08:15 mflatt Exp $
+; $Id: misc.ss,v 1.9 1999/04/22 21:50:34 mflatt Exp $
 
 (unit/sig zodiac:misc^
   (import (mz-pp : mzlib:pretty-print^))
 
-  (define attributes-resetters (make-parameter null))
+  (define attributes-resetters
+    (let ([x null])
+      (case-lambda
+       [() x]
+       [(y) (set! x y)])))
 
   ; This is to get around an ordering problem.  Otherwise uses of
   ; pretty-print show up as #<undefined>, since this pretty-print
