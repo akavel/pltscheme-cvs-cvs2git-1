@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Text.cc,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: Text.cc,v 1.2 1998/02/05 23:00:33 mflatt Exp $
  *
  * Purpose: text panel item
  *
@@ -148,6 +148,7 @@ char *wxText::GetValue(void)
 
 void wxText::SetValue(char *value)
 {
+  if (value)
     XtVaSetValues(X->handle, XtNstring, value, NULL);
 }
 
@@ -171,6 +172,12 @@ void wxText::OnChar(wxKeyEvent &event)
     }
     if (editable)
       wxItem::OnChar(event); // chain to parent method
+}
+
+void wxText::Command(wxCommandEvent &event)
+{
+  SetValue(event.commandString);
+  ProcessCommand(event);
 }
 
 //-----------------------------------------------------------------------------

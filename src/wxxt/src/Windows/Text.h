@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Text.h,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: Text.h,v 1.2 1998/02/05 23:00:33 mflatt Exp $
  *
  * Purpose: text panel item
  *
@@ -58,6 +58,7 @@ public:
     void SetEditable(Bool on);
 
     virtual void ChangeToGray(Bool gray);
+    void Command(wxCommandEvent &event);
 private:
 #   ifdef Have_Xt_Types
     static void EventCallback(Widget, XtPointer, XtPointer);

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Slider.cc,v 1.1.1.1 1997/12/22 17:28:59 mflatt Exp $
+ * $Id: Slider.cc,v 1.2 1998/02/05 23:00:32 mflatt Exp $
  *
  * Purpose: slider panel item
  *
@@ -144,6 +144,12 @@ void wxSlider::SetValue(int new_value)
 	    XfwfMoveThumb(X->handle,
 			  float(value-minimum)/float(maximum-minimum), 0.0);
     }
+}
+
+void wxSlider::Command(wxCommandEvent &event)
+{
+  SetValue(event.commandInt);
+  ProcessCommand(event);
 }
 
 //-----------------------------------------------------------------------------

@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: CheckBox.h,v 1.1.1.1 1997/12/22 17:28:57 mflatt Exp $
+ * $Id: CheckBox.h,v 1.2 1998/02/05 23:00:32 mflatt Exp $
  *
  * Purpose: check box panel item
  *
@@ -59,6 +59,9 @@ public:
     void SetLabel(wxBitmap *bitmap);
 
     virtual char  *GetLabel(void);
+
+
+    void Command(wxCommandEvent &event);
 
 private:
 #   ifdef Have_Xt_Types
