@@ -1,5 +1,5 @@
 ;;
-;; $Id: sig.ss,v 1.72 1997/09/04 14:05:36 mflatt Exp $
+;; $Id: sig.ss,v 1.73 1997/09/11 16:00:52 robby Exp $
 ;;
 
 (begin-elaboration-time
@@ -88,8 +88,7 @@
 (define-signature mred:application^
   (console
    app-name
-   eval-string
-   startup))
+   eval-string))
 
 (define-signature mred:html-mode^
   ())
@@ -434,3 +433,5 @@
    (open mred:testable-window^)
    (unit test : mred:self-test-export^)
    (open mred:url^)))
+
+(define-signature mred:application-imports^ (argv))
