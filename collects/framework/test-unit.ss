@@ -1,5 +1,5 @@
 ;;
-;; $Id: testr.ss,v 1.28 2000/04/25 14:17:34 robby Exp $
+;; $Id: test-unit.ss,v 1.1 2001/02/25 21:13:26 robby Exp $
 ;;
 ;; (mred:test:run-interval [msec]) is parameterization for the
 ;; interval (in milliseconds) between starting actions.
