@@ -1,4 +1,4 @@
-; $Id: x.ss,v 1.57 2000/06/08 20:01:11 mflatt Exp $
+; $Id: x.ss,v 1.58 2000/06/08 22:35:33 mflatt Exp $
 
 (unit/sig zodiac:expander^
   (import
@@ -408,6 +408,9 @@
 	(when v
 	  (loop v)))))
     
+  (define (update-current-namespace name)
+    (let ([id (syntax-symbol->id name)])
+      (global-defined-value name id)))    
 
   (define print-env
     (lambda (env)
