@@ -1,4 +1,4 @@
-; $Id: sexp.ss,v 1.25 2000/01/02 23:28:26 robby Exp $
+; $Id: sexp.ss,v 1.26 2000/06/12 22:01:42 mflatt Exp $
 
 (unit/sig zodiac:sexp^
   (import zodiac:misc^
@@ -63,12 +63,7 @@
 			 (is-a? expr expands<%>))
 		    (z:make-external origin start finish expr)]
 		   (else
-		     (z:make-list origin start finish
-		       (list
-			 (z:make-symbol origin start finish
-			   'quote 'quote '(-1))
-			 expr)
-		       2 marks))))))
+		     (z:make-external origin start finish expr))))))
 	    (structurize expr origin))))))
 
   (define set-macro-origin
