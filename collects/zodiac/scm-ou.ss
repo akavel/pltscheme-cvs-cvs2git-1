@@ -1,4 +1,4 @@
-; $Id: scm-ou.ss,v 1.20 2000/06/07 06:20:12 shriram Exp $
+; $Id: scm-ou.ss,v 1.21 2000/06/08 19:52:30 mflatt Exp $
 
 (unit/sig zodiac:scheme-objects+units^
   (import zodiac:misc^ (z : zodiac:structures^) (z : zodiac:reader-structs^)
@@ -37,7 +37,7 @@
 		    (if (and (inside-unit? attributes)
 			     (check-export expr attributes))
 		      (loop top-level-resolution)
-		      (loop (ensure-not-keyword expr env vocab))))
+		      (loop (ensure-not-syntax expr env vocab))))
 		  (else
 		    (internal-error expr "Invalid resolution in ou: ~s" r))))))))
 

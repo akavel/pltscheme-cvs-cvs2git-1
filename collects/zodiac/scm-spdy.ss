@@ -1,4 +1,4 @@
-; $Id: scm-spdy.ss,v 1.44 2000/05/28 03:47:32 shriram Exp $
+; $Id: scm-spdy.ss,v 1.45 2000/06/08 19:52:30 mflatt Exp $
 
 (unit/sig zodiac:scheme-mrspidey^
   (import zodiac:misc^ (z : zodiac:structures^)
@@ -278,7 +278,7 @@
 				      expr "empty file")
 				    (expand-expr
 				      (structurize-syntax
-					`(begin ,@code)
+					`(#%begin ,@code)
 					expr '(-1))
 				      env attributes vocab)))))
 			    (lambda ()
@@ -391,7 +391,7 @@
 					expr "empty file")
 				      (expand-expr
 					(structurize-syntax
-					  `(begin ,@code)
+					  `(#%begin ,@code)
 					  expr '(-1))
 					env attributes vocab)))))
 			      (lambda ()
