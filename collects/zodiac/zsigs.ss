@@ -1,5 +1,5 @@
 ;;
-;; $Id: zsigs.ss,v 1.9 1998/03/05 18:30:42 mflatt Exp $
+;; $Id: zsigs.ss,v 1.10 1999/02/03 23:07:11 mflatt Exp $
 ;;
 ;; The signatures for all scanner/reader units.
 ;;
@@ -92,5 +92,5 @@
 ;;
 
 (define-signature  zodiac:scanner-code^  (scan))
-(define-signature  zodiac:reader-code^   (read allow-improper-lists))
+(define-signature  zodiac:reader-code^   (read allow-improper-lists allow-reader-quasiquote))
 
