@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	April 1995
- * RCS_ID:      $Id: wx_item.cxx,v 1.3 1998/04/08 00:09:13 mflatt Exp $
+ * RCS_ID:      $Id: wx_item.cxx,v 1.4 1998/12/11 01:07:22 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -216,12 +216,14 @@ void wxItem::SetSize (int x, int y, int w, int h, int sizeFlags)
 void wxItem::SetLabel (char *label)
 {
   char buf[400];
+  char mnem = wxFindMnemonic (label);
   wxStripMenuCodes(label, buf);
   if (!labelWidget)
     return;
   XmString text = XmStringCreateSimple (buf);
   XtVaSetValues (labelWidget,
 		 XmNlabelString, text,
+		 XmNmnemonic, mnem,
 		 NULL);
   XmStringFree (text);
 }
