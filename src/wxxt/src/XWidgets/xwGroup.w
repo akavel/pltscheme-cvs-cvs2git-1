@@ -2,7 +2,6 @@
 # Author: Bert Bos <bert@let.rug.nl>
 # Version: 1.0 for FWF 3.53
 #
-# $Id: xwGroup.w,v 1.4 2000/06/13 13:03:15 mflatt Exp $
 
 @CLASS XfwfGroup (XfwfRowCol)  @file=xwGroup
 
