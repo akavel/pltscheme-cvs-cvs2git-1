@@ -1,3 +1,5 @@
+; $Id: pattern.ss,v 1.4 1997/07/21 15:51:43 shriram Exp $
+
 ; Uses of memq are okay, since they look up pattern var in kwd list
 
 ; Use of equal? WILL FAIL!

@@ -1,3 +1,5 @@
+; $Id: link.ss,v 1.12 1997/07/21 15:51:43 shriram Exp $
+
 (compound-unit/sig 
   (import
     (INTERFACE : zodiac:interface^)

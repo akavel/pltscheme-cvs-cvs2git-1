@@ -1,3 +1,5 @@
+; $Id: scm-core.ss,v 1.30 1997/07/21 15:51:43 shriram Exp $
+
 (unit/sig zodiac:scheme-core^
   (import zodiac:structures^ zodiac:misc^ zodiac:sexp^
     (z : zodiac:reader-structs^) zodiac:back-protocol^

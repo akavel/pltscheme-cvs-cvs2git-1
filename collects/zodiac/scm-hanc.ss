@@ -1,3 +1,5 @@
+; $Id: scm-hanc.ss,v 1.37 1997/07/21 15:51:43 shriram Exp $
+
 (define-struct signature-element (source))
 (define-struct (name-element struct:signature-element) (name))
 (define-struct (unit-element struct:signature-element) (id signature))

@@ -1,3 +1,5 @@
+; $Id: corelate.ss,v 1.3 1997/07/21 15:51:43 shriram Exp $
+
 (unit/sig zodiac:correlate^
   (import zodiac:structures^)
 

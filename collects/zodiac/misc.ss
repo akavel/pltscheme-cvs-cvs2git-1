@@ -1,3 +1,5 @@
+; $Id: misc.ss,v 1.6 1997/07/21 15:51:43 shriram Exp $
+
 (unit/sig zodiac:misc^
   (import (mz-pp : mzlib:pretty-print^))
 

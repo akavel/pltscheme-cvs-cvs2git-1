@@ -1,3 +1,5 @@
+; $Id: scm-obj.ss,v 1.31 1997/07/21 15:51:43 shriram Exp $
+
 (unit/sig zodiac:scheme-objects^
   (import zodiac:misc^ (z : zodiac:structures^) (z : zodiac:reader-structs^)
     zodiac:sexp^ (pat : zodiac:pattern^) zodiac:scheme-core^
