@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.221 2000/07/10 23:42:02 mflatt Exp $
+; $Id: scm-main.ss,v 1.222 2000/07/26 20:29:04 shriram Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -2003,7 +2003,11 @@
 		  (if (null? params)
 		      `(#%let-values () ,@body)
 		      `(#%let ,(append
-				(map list pzs params)
+				(map list
+				  pzs
+				  (map (lambda (p)
+					 `(#%check-parameter-procedure ,p))
+				    params))
 				(map list saves vals))
 			 (#%let ((,swap (#%lambda ()
 					 ,@(map 
