@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: wx.h,v 1.8 2003/09/29 18:18:43 eli Exp $
  *
  * Purpose: wxWindows Xt-port main include file
  *
