@@ -1,5 +1,5 @@
 ;;
-;; $Id: frameworkc.ss,v 1.16 1999/10/25 23:10:49 robby Exp $
+;; $Id: frameworkc.ss,v 1.17 2000/01/17 15:13:18 robby Exp $
 ;;
 
 (compound-unit/sig (import [core:string : mzlib:string^]
@@ -40,7 +40,9 @@
 
 	[editor : framework:editor^ ((require-relative-library "editor.ss")
 				     mred
-				     autosave finder path-utils keymap icon preferences text pasteboard)]
+				     autosave finder path-utils keymap icon
+				     preferences text pasteboard frame
+				     core:file)]
 	[pasteboard : framework:pasteboard^ ((require-relative-library "pasteboard.ss")
 					     mred editor)]
 	[text : framework:text^ ((require-relative-library "text.ss")
