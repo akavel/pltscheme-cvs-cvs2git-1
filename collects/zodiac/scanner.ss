@@ -1,6 +1,6 @@
 ;;
 ;;  zodiac:scanner-code@
-;;  $Id: scanner.ss,v 1.13 1999/10/26 18:47:02 shriram Exp $
+;;  $Id: scanner.ss,v 1.14 2000/03/24 14:50:29 clements Exp $
 ;;
 ;;  Zodiac Scanner  July 96.
 ;;  mwk, plt group, Rice university.
@@ -198,7 +198,7 @@
   (define tab-mult   8)
   
   (define text->string
-    (lambda (text) (list->string (reverse text))))
+    (lambda (text) (string->immutable-string (list->string (reverse text)))))
   
   (define text->number
     (lambda (text) (string->number (text->string text))))
