@@ -4,7 +4,7 @@
  * Author:	Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wb_timer.cxx,v 1.1.1.1 1997/12/22 16:11:54 mflatt Exp $
+ * RCS_ID:      $Id: wb_timer.cxx,v 1.2 1998/12/07 02:52:30 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -52,7 +52,7 @@ extern "C" int gettimeofday(struct timeval *tp, void *);
 #endif
 #endif
 
-wxbTimer::wxbTimer(void)
+wxbTimer::wxbTimer(void) : wxObject(WXGC_NO_CLEANUP)
 {
   __type = wxTYPE_TIMER;
 #if 0
