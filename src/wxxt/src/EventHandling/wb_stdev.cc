@@ -4,7 +4,7 @@
  * Author:		Julian Smart
  * Created:	1993
  * Updated:	August 1994
- * RCS_ID:      	$Id: wb_stdev.cc,v 1.7 2001/07/25 20:23:24 mflatt Exp $
+ * RCS_ID:      	$Id: wb_stdev.cc,v 1.8 2002/01/27 20:51:00 mflatt Exp $
  * Copyright:	(c) 1993, AIAI, University of Edinburgh
  */
 
@@ -268,6 +268,7 @@ wxKeyEvent::wxKeyEvent(WXTYPE type)
   metaDown = FALSE;
   altDown = FALSE;
   keyCode = 0;
+  keyUpCode = WXK_PRESS;
 }
 
 Bool wxKeyEvent::ControlDown(void)
