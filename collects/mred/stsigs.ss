@@ -1,5 +1,5 @@
 ;;
-;; $Id: stsigs.ss,v 1.6 1997/07/22 18:45:29 krentel Exp $
+;; $Id: stsigs.ss,v 1.7 1997/07/29 15:18:15 krentel Exp $
 ;;
 ;; Signatures for gui tester.
 ;;
@@ -43,7 +43,8 @@
   (button-push   button-push-now   button-push-now*
    keystroke     keystroke-now     keystroke-now*
    menu-select   menu-select-now   menu-select-now*
-   mouse-click   mouse-click-now   mouse-click-now*))
+   mouse-click   mouse-click-now   mouse-click-now*
+   new-window    new-window-now))
 
 (define-signature mred:test:drscheme^
   (get-defns-canvas 
