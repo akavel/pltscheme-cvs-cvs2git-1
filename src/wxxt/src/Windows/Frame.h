@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: Frame.h,v 1.2 1998/08/18 20:03:40 mflatt Exp $
+ * $Id: Frame.h,v 1.3 1998/09/18 22:08:58 mflatt Exp $
  *
  * Purpose: base class for all frames
  *
@@ -30,7 +30,7 @@
 #pragma interface
 #endif
 
-class wxIcon;
+class wxBitmap;
 class wxMenuBar;
 class wxMessage;
 class wxToolBar;
@@ -68,7 +68,7 @@ public:
     void  Maximize(Bool maximize);
     // associated GDI objects
     wxMenuBar *GetMenuBar(void);
-    void      SetIcon(wxIcon *icon);
+    void      SetIcon(wxBitmap *icon);
     void      SetMenuBar(wxMenuBar *menubar);
     // miscellaneous
     void  Command(int id);
@@ -87,7 +87,7 @@ protected:
     wxMenuBar  *menubar;
     wxMessage  **status;
     int        num_status;
-    Bool       other; /* This field is unused */
+    wxBitmap   *frame_icon;
     Bool       being_destroyed;
 };
 
