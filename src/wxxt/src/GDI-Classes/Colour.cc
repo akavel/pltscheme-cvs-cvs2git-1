@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: Colour.cc,v 1.12 1999/11/28 05:21:34 mflatt Exp $
  *
  * Purpose: classes to cover colours and colourmaps
  *
@@ -362,6 +361,7 @@ wxColour *wxColourDatabase::FindColour(const char *colour)
   static wxHashTable *aux = NULL;
   if (!aux) {
     wxColour *tmpc;
+    wxREGGLOB(aux);
     aux = new wxHashTable(wxKEY_STRING, 20);
 #define APPEND_C(name, c) tmpc = c; tmpc->Lock(1); aux->Put(name, tmpc);
 

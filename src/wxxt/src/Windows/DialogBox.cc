@@ -1,5 +1,4 @@
 /*								-*- C++ -*-
- * $Id: DialogBox.cc,v 1.8 1999/11/25 16:32:23 mflatt Exp $
  *
  * Purpose: dialog box
  *
