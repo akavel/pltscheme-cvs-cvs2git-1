@@ -1,4 +1,4 @@
-; $Id: scm-main.ss,v 1.116 1997/08/13 15:23:17 shriram Exp $
+; $Id: scm-main.ss,v 1.117 1997/08/13 15:57:38 shriram Exp $
 
 (unit/sig zodiac:scheme-main^
   (import zodiac:misc^ zodiac:structures^
@@ -1234,7 +1234,7 @@
 				   ,(if had-no-clauses?
 				      "cond must contain at least one clause"
 				      "no matching else clause")
-				   ((debug-info-handler)))))
+				   (#%apply (#%debug-info-handler) (#%list)))))
 			    (let ((first (car exps))
 				   (rest (cdr exps)))
 			      (cond
