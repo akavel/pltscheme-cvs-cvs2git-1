@@ -1,7 +1,3 @@
-/*
- * $Id: xwTools3d.c,v 1.3 2002/03/13 22:49:22 mflatt Exp $
- */
-
 /***********************************************************
 Copyright 1987, 1988 by Digital Equipment Corporation, Maynard, Massachusetts,
 and the Massachusetts Institute of Technology, Cambridge, Massachusetts.
