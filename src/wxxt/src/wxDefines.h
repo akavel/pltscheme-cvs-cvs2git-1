@@ -1,5 +1,5 @@
 /*								-*- C++ -*-
- * $Id: wxDefines.h,v 1.6 1998/09/20 21:48:44 mflatt Exp $
+ * $Id: wxDefines.h,v 1.7 1998/11/09 17:25:08 mflatt Exp $
  *
  * Purpose: Declarations/definitions common to all wx source files
  *
@@ -250,7 +250,7 @@ enum {
     // privately defined cursors
     wxCURSOR_START_PRIVATE	= wxLAST_X11_CURSOR+1,
     wxCURSOR_CHAR,
-    wxCURSOR_BLANK,
+    wxCURSOR_BLANK
 };
 
 // defines for wxDC
@@ -358,7 +358,7 @@ enum {
     wxEVENT_TYPE_RIGHT_UP             = 0x3002, // = RIGHT
     wxEVENT_TYPE_MOTION               = 0x3003,
     wxEVENT_TYPE_ENTER_WINDOW         = 0x3004,
-    wxEVENT_TYPE_LEAVE_WINDOW         = 0x3005,
+    wxEVENT_TYPE_LEAVE_WINDOW         = 0x3005
 };
 
 #define WXSCROLLPOS(event)	event.moveType
