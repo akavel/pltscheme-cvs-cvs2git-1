@@ -4,7 +4,7 @@
  * Author:      Julian Smart
  * Created:     1993
  * Updated:	August 1994
- * RCS_ID:      $Id: wx_canvs.cxx,v 1.6 1998/12/07 02:52:30 mflatt Exp $
+ * RCS_ID:      $Id: wx_canvs.cxx,v 1.7 1999/02/21 00:29:53 mflatt Exp $
  * Copyright:   (c) 1993, AIAI, University of Edinburgh
  */
 
@@ -148,6 +148,14 @@ void wxCanvas::SetSize (int x, int y, int w, int h, int sizeFlags)
       MoveWindow (wnd->handle, x, y, w, h, TRUE);
       GetEventHandler()->OnSize (w, h);
     }
+}
+
+wxWindow *wxCanvas::FindFocusWindow()
+{
+  if (!wxSubType(__type, wxTYPE_PANEL))
+    return IsShown() ? this : NULL;
+  else
+    return wxWindow::FindFocusWindow();
 }
 
 /*
