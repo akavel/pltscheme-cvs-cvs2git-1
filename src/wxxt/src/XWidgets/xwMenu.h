@@ -1,4 +1,4 @@
-/* $Id: xwMenu.h,v 1.1.1.1 1997/12/22 17:29:05 mflatt Exp $ */
+/* $Id: xwMenu.h,v 1.2 1998/04/22 14:38:48 mflatt Exp $ */
 
 /***********************************************************
 Copyright 1995 by Markus Holzem
@@ -71,6 +71,8 @@ SOFTWARE.
 #define XtCHorizontal           "Horizontal"
 #define XtNmenu                 "menu"
 #define XtCMenu                 "Menu"
+#define XtNrefresh              "refresh"
+#define XtCRefresh              "Refresh"
 #define XtNonNewItem            "onNewItem"
 #define XtNonSelect             "onSelect"
 #define XtNonNoSelect           "onNoSelect"

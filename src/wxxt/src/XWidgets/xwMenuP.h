@@ -1,5 +1,5 @@
 /*
-* $Id: xwMenuP.h,v 1.1.1.1 1997/12/22 17:29:00 mflatt Exp $
+* $Id: xwMenuP.h,v 1.2 1998/04/22 14:38:48 mflatt Exp $
 */
 
 /***********************************************************
@@ -70,6 +70,7 @@ typedef struct _MenuPart {
     XtCallbackList  on_new_item;    /* callback procedures */
     XtCallbackList  on_select;
     XtCallbackList  on_no_select;
+    Boolean         refresh;
     /* private data */
     Cursor          cursor;
     GC              normal_GC;
