@@ -1,4 +1,4 @@
-; $Id: scm-ou.ss,v 1.15 1998/11/04 19:52:55 mflatt Exp $
+; $Id: scm-ou.ss,v 1.16 1998/12/01 00:17:15 mflatt Exp $
 
 (unit/sig zodiac:scheme-objects+units^
   (import zodiac:misc^ (z : zodiac:structures^) (z : zodiac:reader-structs^)
@@ -22,7 +22,7 @@
 			       (if top-level-space
 				   (begin
 				     (let ((ref
-					    (create-top-level-varref/bind
+					    (create-top-level-varref/bind/unit
 					     id
 					     (hash-table-get top-level-space id
 					       (lambda ()
