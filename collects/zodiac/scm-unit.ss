@@ -1,4 +1,4 @@
-; $Id: scm-unit.ss,v 1.92 2000/06/09 00:38:15 mflatt Exp $
+; $Id: scm-unit.ss,v 1.93 2000/08/10 16:42:42 shriram Exp $
 
 (unit/sig zodiac:scheme-units^
   (import zodiac:misc^ (z : zodiac:structures^)
@@ -1001,6 +1001,7 @@
 			      (vars (pat:pexpand '(var ...)
 				      p-env kwd))
 			      (_ (for-each valid-syntactic-id? vars))
+			      (_ (distinct-valid-syntactic-id/s? vars))
 			      (_ (for-each
 				   (lambda (var)
 				     (ensure-not-keyword var)
